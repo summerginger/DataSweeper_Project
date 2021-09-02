@@ -1,4 +1,4 @@
 # DataSweeper Project
 
 ## Credit Card Approval Predictions
-# kaggle dataset
+## Using Kaggle datasets
