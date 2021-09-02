@@ -1,1 +1,3 @@
-# DataSweeper_DataAnalytics_Team_Project
+# DataSweeper_Project
+
+## Credit Card Approval Predictions
