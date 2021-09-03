@@ -18,7 +18,6 @@ This week, each team member will choose a shape, with each shape responsible for
  
 Instead of each member staying with his or her shape-assigned role, the one initially assigned the X role will transition through the other roles for the remaining segments.
 
-Google docs [click here](https://docs.google.com/document/d/1NugbKt5vuU91jPWE3nzVjTbBYoNdhf9_9ET2l-FNRmI/edit?usp=sharing)
 
 
 
