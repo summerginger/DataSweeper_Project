@@ -1,7 +1,6 @@
 # Credit Card Approval Prediction <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
 ## Overview
-what is this about? 
 ### Purpose
 ### Result 
 ### Summary
