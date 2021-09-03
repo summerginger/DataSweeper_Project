@@ -12,7 +12,7 @@ what is this about?
 ## Recommendation
 ## Technologies
 *which technologies will be used for each step of the project.
-## Team communicatio protocols
+## Team communication protocols
 This week, each team member will choose a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X.
 
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
