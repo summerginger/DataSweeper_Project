@@ -21,5 +21,3 @@ Instead of each member staying with his or her shape-assigned role, the one init
 
 
 
-
-
