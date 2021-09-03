@@ -1,16 +1,28 @@
 # Credit Card Approval Prediction
 ## Overview
-what is this about? 
+
+The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
+
 ### Purpose
 
 ### Machine Learning Model 
+In the financial industry Credit Score cards have been used for a long time to determine the approval of loans. 
+
+
+
 *This can even be a diagram that explains how it will work concurrently with the rest of the project steps.
 ### Using Kaggle Datasets
 *This will ensure the database will work seamlessly with the rest of the project.
+
 ### Result 
+
 ### Summary
+
 ### Recommendation
+
 ### Technologies
+
+
 *which technologies will be used for each step of the project.
 ### Team communication protocols
 This week, each team member will choose a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X.
