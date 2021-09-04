@@ -35,36 +35,38 @@ The Dataset contains two files:
  
 |application_record.csv |||
 | ------------- |-------------| -----|
-| Feature name        |    Explanation       |  Remarks |
+| Feature name        |    Explanation       |  Remarks/Variable Type |
 |    ID   | Client number |   |
-| CODE_GENDER   | Gender     |    |
-|  FLAG_OWN_CAR |	Is there a car|     |  
-| FLAG_OWN_REALTY	|Is there a property| |
-| CNT_CHILDREN |	Number of children |   |
-| AMT_INCOME_TOTAL |	Annual income |   |
-| NAME_INCOME_TYPE |	Income category   |    |
-| NAME_EDUCATION_TYPE |	Education level    |    |
-| NAME_FAMILY_STATUS	|Marital status    |    |
-|  NAME_HOUSING_TYPE |	Way of living   |    |
-|  DAYS_BIRTH |	Birthday     |  Count backwards from current day (0), -1 means yesterday.  |
-| DAYS_EMPLOYED |	Start date of employment | Count backwards from current day(0). If positive, it means the person currently unemployed.  |
-| FLAG_MOBIL |	Is there a mobile phone   |    |
-| FLAG_WORK_PHONE	| Is there a work phone |    |
-| FLAG_PHONE |	Is there a phone     |    |
-| FLAG_EMAIL	| Is there an email  |    |
-|  OCCUPATION_TYPE |	Occupation   |    |
-|  CNT_FAM_MEMBERS |	Family size  |    |
+| CODE_GENDER   | Gender     | Binary    |
+|  FLAG_OWN_CAR |	Is there a car|  Binary   |  
+| FLAG_OWN_REALTY	|Is there a property| Binary |
+| CNT_CHILDREN |	Number of children | Continuous  |
+| AMT_INCOME_TOTAL |	Annual income | Continuous  |
+| NAME_INCOME_TYPE |	Income category   | Categorical   |
+| NAME_EDUCATION_TYPE |	Education level    | Categorical   |
+| NAME_FAMILY_STATUS	|Marital status    | Categorical   |
+|  NAME_HOUSING_TYPE |	Way of living   |  Categorical  |
+|  DAYS_BIRTH |	Birthday     |  Count backwards from current day (0), -1 means yesterday. / Continuous |
+| DAYS_EMPLOYED |	Start date of employment | Count backwards from current day(0). If positive, it means the person currently unemployed. / Continuous |
+| FLAG_MOBIL |	Is there a mobile phone   |  Binary  |
+| FLAG_WORK_PHONE	| Is there a work phone | Binary   |
+| FLAG_PHONE |	Is there a phone     | Binary   |
+| FLAG_EMAIL	| Is there an email  | Binary   |
+|  OCCUPATION_TYPE |	Occupation   | Categorical   |
+|  CNT_FAM_MEMBERS |	Family size  | Continuous   |
 
 
 |credit_record.csv | | |
 --- | --- | ---
 *Feature name*  | `Explanation` | **Remarks**
 ID   | Client number |   
-MONTHS_BALANCE   | Record month    |  The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on  
-STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-89 days overdue` 3: `90-119 days overdue` 4: `120-149 days overdue` 5: `Overdue or bad debts, write-offs for more than 150 days` C: `paid off that month` X: `No loan for the month` 
+MONTHS_BALANCE   | Record month    |  The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on / Continuous 
+STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-89 days overdue` 3: `90-119 days overdue` 4: `120-149 days overdue` 5: `Overdue or bad debts, write-offs for more than 150 days` C: `paid off that month` X: `No loan for the month` / Categorical
+ 
 ### Description of data source
 This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). The precision of data is over 0.5. 
-The binary features including the following: 
+
+ The binary features including the following: 
 - Gender
 - Having a car or not
 - Having house reality or not
