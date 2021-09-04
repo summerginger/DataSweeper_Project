@@ -4,7 +4,7 @@
 ## Overview
 The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
  
-## Question : how can we prevent fraud / faking credit card applications?
+## Question: Based on the dataset,what are the standard requirements for an individual to be approved for a credit card?
 ## Technologies
 *which technologies will be used for each step of the project.
 ### Machine Learning Model 
