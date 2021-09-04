@@ -1,13 +1,9 @@
 
-# Credit Card Approval Prediction
-## Overview
-The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
-### Purpose
 # Credit Card Approval Prediction <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
-
 ## Overview
-The purpose of this project 
+The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
+ 
 ## Question : how can we prevent fraud / faking credit card applications?
 ## Technologies
 *which technologies will be used for each step of the project.
@@ -34,8 +30,6 @@ This week, each team member will choose a shape, with each shape responsible for
 
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
  
-Instead of each member staying with his or her shape-assigned role, the one initially assigned the X role will transition through the other roles for the remaining segments.
-
 
 
 
