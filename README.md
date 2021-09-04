@@ -1,7 +1,7 @@
 
 # Topic : Credit Card Approval Prediction  <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
-## Overview
+## 1. Overview
 The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
 
 ## Why we chose this topic? 
@@ -10,7 +10,7 @@ In today's fast-paced and high-tech world, credit scores can further impact many
 ## Question
 Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
 
-## Technologies
+## 2. Technologies
 
 <p align="center">
 <image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
@@ -18,15 +18,15 @@ Based on the dataset, what are the standard requirements for an individual to be
 
 
 
-*which technologies will be used for each step of the project.
-### Machine Learning Model 
+
+### 3. Machine Learning Model 
 In the financial industry Credit Score cards have been used for a long time to determine the approval of loans. 
 
 
 
 *This can even be a diagram that explains how it will work concurrently with the rest of the project steps.
 
-## Overview of dataset
+## 4. Overview of dataset
  
 The Dataset contains two files:
 1. Demographics & application data - "application_record.csv" - this data has been provided by the applicants at the time of the credit card application. It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
@@ -72,18 +72,26 @@ The binary features including the following:
 - Having an email or not
 - Having a Work Phone or not
 
-However, we will drop a few columns where consideration does not apply to the prediction. 
-### Result 
-### Summary
-### Recommendation
+### Data Cleaning and Preparation
+ 
+ 
+ However, we will drop a few columns where consideration does not apply to the prediction. 
+### 5. Result 
+### 6. Summary
+### 7. Recommendation
 
-### Resources 
+###
+ 
+***Resources***
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
-### Team communication protocols
+
+***Team communication protocols***
+ 
 This week, each team member will choose a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X. 
-We will use whatsapp,slack,zoom meeting, Github project and [google docs](https://docs.google.com/document/d/1NugbKt5vuU91jPWE3nzVjTbBYoNdhf9_9ET2l-FNRmI/edit?usp=sharing) tools for communiction.
+We will use whatsapp,slack,zoom meeting, Github project and [google docs](https://docs.google.com/document/d/1NugbKt5vuU91jPWE3nzVjTbBYoNdhf9_9ET2l-FNRmI/edit?usp=sharing) tools for communications.
+ 
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
  
 
