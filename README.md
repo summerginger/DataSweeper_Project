@@ -70,8 +70,7 @@ However, we will drop a few columns where consideration does not apply to the pr
 ### Result 
 ### Summary
 ### Recommendation
-### Technologies
-*which technologies will be used for each step of the project.
+
 ### Resources 
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
