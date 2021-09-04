@@ -4,13 +4,20 @@
 ## Overview
 The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
 
-## why we choose this topic 
-In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. We all know that credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. For protecting an individual's credit score, the financial sector owns a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. As data analysts, we are most likely to handle this task, and we will apply new advanced learning machine algorithms to improve predictive power.
+## Why we chose this topic? 
+In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. For protecting an individual's credit score, the financial sector owns a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. As data analysts, we are most likely to handle this task, and we will apply new advanced learning machine algorithms to improve predictive power.
 
 ## Question
 Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
 
 ## Technologies
+
+<p align="center">
+<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
+</p>
+
+
+
 *which technologies will be used for each step of the project.
 ### Machine Learning Model 
 In the financial industry Credit Score cards have been used for a long time to determine the approval of loans. 
