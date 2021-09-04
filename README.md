@@ -27,6 +27,12 @@ In the financial industry Credit Score cards have been used for a long time to d
 *This can even be a diagram that explains how it will work concurrently with the rest of the project steps.
 
 ## Overview of dataset
+ 
+The Dataset contains two files:
+1. Demographics & application data - "application_record.csv" - this data has been provided by the applicants at the time of the credit card application. It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
+ 
+2. Credit Bureau data - "credit_record.csv" - data obtained from the credit bureau showing payment experience and the date of the last data extraction.  
+ 
 |application_record.csv |||
 | ------------- |-------------| -----|
 | Feature name        |    Explanation       |  Remarks |
