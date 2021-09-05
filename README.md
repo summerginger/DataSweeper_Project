@@ -81,7 +81,7 @@ Based on the dataset, what are the standard requirements for an individual to be
 
 ## 5. Data Exploration Phase
 
-**Data Cleaning and Preparation**
+### Data Cleaning and Preparation
   
  However, we will drop a few columns where consideration does not apply to the prediction. 
  
@@ -115,11 +115,11 @@ The database for this project is a PostgreSQL database. The database is created 
 
  
  
-### 8. Result of the Analysis
+## 8. Result of the Analysis
  
 
 
-### 9. Recommendations
+## 9. Recommendations
 
 ###
  
