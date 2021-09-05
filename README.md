@@ -105,8 +105,6 @@ Taking data from the provisional database is demonstrated in the demo.ipynb file
 
 
 
-*This can even be a diagram that explains how it will work concurrently with the rest of the project steps.
-
  
  ## 7. Technologies
 
