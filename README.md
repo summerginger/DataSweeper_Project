@@ -91,6 +91,10 @@ Based on the dataset, what are the standard requirements for an individual to be
  
  In the financial industry Credit Score cards have been used for a long time to determine the approval of loans. 
 
+The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0) credit card applicants. We will be applying classification machine learning models such as Logistic regression, Support Vector Machines, Decision Trees, Random Forests, and gradient boosted trees. 
+
+However, before any machine learning models are applied on the dataset, encoding labels, scaling and normalizing data must be done to ensure machine learning models such as SVM to perform at its optimized conditions. 
+
 
 
 *This can even be a diagram that explains how it will work concurrently with the rest of the project steps.
