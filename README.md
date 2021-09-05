@@ -87,7 +87,7 @@ Based on the dataset, what are the standard requirements for an individual to be
  
 ## 6. Analysis Phase 
  
- **Machine Learning Model**
+### Machine Learning Model
 
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0). We will be applying classification machine learning models such as Logistic regression, Support Vector Machines, Decision Trees, Random Forests, and gradient boosted trees. 
 
@@ -102,7 +102,7 @@ A python database API (DBAPI) library (i.e. psycopg2)
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder. Below shows a screenshot of the file.
 
 
- **Database**
+### Database
 
 The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the Kaggle_Dataset folder. The machine learning model will be connected as shown in the demo.ipynb file from the Kaggle_Dataset folder.
  
