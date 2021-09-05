@@ -7,7 +7,7 @@ The objective of this project is to help a financial institution to decide wheth
 
 ## 2. Topic Selection Criteria
 
-In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. For protecting an individual's credit score, the financial sector owns a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. As data analysts, we are most likely to handle this task, and we will apply new advanced learning machine algorithms to improve predictive power.
+In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. For protecting an individual's credit score, the financial sector owns a responsibility to control and objectively quantify the magnitude of risk and credit card issuance and new advanced learning machine algorithms to improve predictive power will be used.
 
 
 
