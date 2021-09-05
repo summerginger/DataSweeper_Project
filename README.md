@@ -113,7 +113,7 @@ However, before any machine learning models are applied on the dataset, encoding
  
 
 
-### 9. Recommendationa
+### 9. Recommendations
 
 ###
  
