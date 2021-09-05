@@ -89,11 +89,19 @@ Based on the dataset, what are the standard requirements for an individual to be
  
  **Machine Learning Model**
  
- In the financial industry Credit Score cards have been used for a long time to determine the approval of loans. 
+In the financial industry Credit Score cards have been used for a long time to determine the approval of loans. Hence, the purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0). We will be applying classification machine learning models such as Logistic regression, Support Vector Machines, Decision Trees, Random Forests, and gradient boosted trees. 
 
-The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0) credit card applicants. We will be applying classification machine learning models such as Logistic regression, Support Vector Machines, Decision Trees, Random Forests, and gradient boosted trees. 
+Before any machine learning models are applied on the dataset, encoding labels, scaling and normalizing data must be done to ensure machine learning models such as SVM to perform at its optimized conditions. 
 
-However, before any machine learning models are applied on the dataset, encoding labels, scaling and normalizing data must be done to ensure machine learning models such as SVM to perform at its optimized conditions. 
+The output label for this dataset will be the status of the applicant in the credit_records.csv file. As shown in Overview of Dataset, the status of the applicants are categorized into 8 outcomes (0, 1, 2, 3, 4, 5, X, and C). The challenge here is to categorize which applicant status is deemed “good” or “bad”. Hence, for this dataset, applicants who have a status of 0-5 are considered as “bad” applicants, i.e. not approved (0), and applicants who have a status of C or X are considered as “good” applicants, i.e. approved(1). This can be done with the .replace() method using the pandas library. 
+
+Connecting the machine learning model to the database is another challenge that must be faced. For this, we have chosen to create a PostgreSQL database and integrate the jupyter notebook file for machine learning using 3 different libraries. These libraries are:
+
+- ipython-sql
+- sqlalchemy
+- A python database API (DBAPI) library (i.e. psycopg2)
+
+Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder. Below shows a screenshot of the file.
 
 
 
