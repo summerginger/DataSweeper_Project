@@ -106,8 +106,8 @@ These libraries are:
 - ipython-sql
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
-- 
-Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder.
+
+Taking data from the provisional database is demonstrated in the demo.ipynb file from the machine_learning folder.
 
 Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
 
