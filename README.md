@@ -156,5 +156,10 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
  
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
  
-
+## GITHUB Individual Branches
+ 
+- Binoy Luckoo's Branch Name:  Binoy 
+- Samir Rifi's Branch Name:  Samir
+- Jane Huang's Branch Name: Jane
+- Lucas Chandra's Branch Name: Lucas
 
