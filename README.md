@@ -99,7 +99,7 @@ Connecting the machine learning model to the database is another challenge that 
 ipython-sql
 sqlalchemy
 A python database API (DBAPI) library (i.e. psycopg2)
-Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder. Below shows a screenshot of the file.
+Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder.
 
 
 ### Database
