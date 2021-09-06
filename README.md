@@ -1,5 +1,5 @@
 
-# Topic : Credit Card Approval Prediction  <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+# Credit Card Approval Prediction  <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
 # Presentation
 ##  Overview of the Project
@@ -14,7 +14,7 @@ To help automate the process of credit card application approvals, new advanced 
 
 Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
 
-### Description of data source
+## Description of data source
 This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). The precision of data is over 0.5. 
 
  The binary features including the following: 
@@ -26,11 +26,9 @@ This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approv
 - Having a Work Phone or not
 
 ##  Question the team wants to answer with the data
-
 Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
 
 # Database
-
 The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the PostgreSQL_Database folder. The machine learning model will be connected as shown in the demo.ipynb file from the machine_learning folder.
 
 ### The Dataset contains two files:
@@ -81,13 +79,7 @@ STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-8
   
  However, we will drop a few columns where consideration does not apply to the prediction. 
  
- 
-## Technologies
-<p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
-</p>
-
-# Machine Learning 
+# Machine Learning Model
 
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0). We will be applying classification machine learning models such as Logistic regression, Support Vector Machines, Decision Trees, Random Forests, and gradient boosted trees. 
 
@@ -116,7 +108,10 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
 - Samir Rifi's Branch Name:  Samir
 - Jane Huang's Branch Name: Jane
 - Lucas Chandra's Branch Name: Lucas
- 
+## Technologies
+<p align="center">
+<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
+</p>
 ***Resources***
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
