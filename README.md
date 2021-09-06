@@ -85,8 +85,6 @@ Based on the dataset, what are the standard requirements for an individual to be
 
 ## 1. Overview of the Project
 
-The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
-
 ## 2. Topic Selection Criteria
 
 In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. For protecting an individual's credit score, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance.
