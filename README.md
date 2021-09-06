@@ -108,11 +108,14 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
 - Samir Rifi's Branch Name:  Samir
 - Jane Huang's Branch Name: Jane
 - Lucas Chandra's Branch Name: Lucas
+
 ## Technologies
 <p align="center">
 <image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
 </p>
+ 
 ***Resources***
+ 
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
