@@ -94,16 +94,19 @@ Based on the dataset, what are the standard requirements for an individual to be
  
 ### Machine Learning Model
 
-The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0). We will be applying classification machine learning models such as Logistic regression, Support Vector Machines, Decision Trees, Random Forests, and gradient boosted trees. 
+The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Support Vector Machines, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
 
 Before any machine learning models are applied on the dataset, encoding labels, scaling and normalizing data must be done to ensure machine learning models such as SVM to perform at its optimized conditions. 
 
 The output label for this dataset will be the status of the applicant in the credit_records.csv file. As shown in Overview of Dataset, the status of the applicants are categorized into 8 outcomes (0, 1, 2, 3, 4, 5, X, and C). The challenge here is to categorize which applicant status is deemed “good” or “bad”. Hence, for this dataset, applicants who have a status of 0-5 are considered as “bad” applicants, i.e. not approved (0), and applicants who have a status of C or X are considered as “good” applicants, i.e. approved(1). This can be done with the .replace() method using the pandas library. 
 
-Connecting the machine learning model to the database is another challenge that must be faced. For this, we have chosen to create a PostgreSQL database and integrate the jupyter notebook file for machine learning using 3 different libraries. These libraries are:
-ipython-sql
-sqlalchemy
-A python database API (DBAPI) library (i.e. psycopg2)
+Connecting the machine learning model to the database is another challenge that must be overcome. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+
+These libraries are:
+- ipython-sql
+- SQLALCHEMY
+- A python database API (DBAPI) library (i.e. psycopg2)
+- 
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder.
 
 Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
@@ -114,7 +117,9 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 ### Database
 
 
-The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the Kaggle_Dataset folder. The machine learning model will be connected as shown in the demo.ipynb file from the Kaggle_Dataset folder.
+The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **Kaggle_Dataset folder.** The machine learning model will be connected as shown in the demo.ipynb file from the Kaggle_Dataset folder.
+
+The ERD diagram for our provisional database is also provided in the 
  
  ## 7. Technologies
 
