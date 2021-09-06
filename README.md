@@ -78,7 +78,7 @@ STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-8
 The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
 
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="500">
 </p>
 
 ### Data Cleaning and Preparation
@@ -109,6 +109,7 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
  
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
 
+
 ## Individual Branches:
 - Binoy Luckoo's Branch Name:  Binoy 
 - Samir Rifi's Branch Name:  Samir
@@ -117,7 +118,7 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
 
 ## Technologies
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
+<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG" width="600">
 </p>
  
 ***Resources***
