@@ -124,14 +124,15 @@ The database for this project is a PostgreSQL database. The database is created 
 The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
 
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"  width="500">
 </p>
 
+ 
  
  ## 7. Technologies
 
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
+<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG" width="800">
 </p>
 
 
