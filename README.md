@@ -109,7 +109,7 @@ These libraries are:
 
 
 
-Taking data from the provisional database is demonstrated in the demo.ipynb file from the machine_learning folder.
+
 
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the **machine_learning** folder.
 
@@ -123,7 +123,9 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 ### Database
 
 
-The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** The machine learning model will be connected as shown in the demo.ipynb file from the **machine_learning** folder.
+The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
+
+The machine learning model will be connected as shown in the demo.ipynb file from the **machine_learning** folder.
 
 The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
 
