@@ -75,6 +75,12 @@ STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-8
 
 ##  Data Exploration Phase
 
+The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
+
+<p align="center">
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"
+</p>
+
 ### Data Cleaning and Preparation
   
  However, we will drop a few columns where consideration does not apply to the prediction. 
