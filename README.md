@@ -142,7 +142,7 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 ## 9. Recommendations
       ***TBA***
 
-# Github
+
 
 ## Team communication protocols
  
@@ -150,12 +150,6 @@ This week, each team member will choose a shape, with each shape responsible for
 We will use whatsapp,slack,zoom meeting, Github project and [google docs](https://docs.google.com/document/d/1NugbKt5vuU91jPWE3nzVjTbBYoNdhf9_9ET2l-FNRmI/edit?usp=sharing) tools for communications.
  
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
-
-## Individual Branches:
-- Binoy Luckoo's Branch Name:  Binoy 
-- Samir Rifi's Branch Name:  Samir
-- Jane Huang's Branch Name: Jane
-- Lucas Chandra's Branch Name: Lucas
 
  
 ***Resources***
