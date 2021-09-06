@@ -136,10 +136,11 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
  
  
 ## 8. Result of the Analysis
- 
+      ***TBA***
 
 
 ## 9. Recommendations
+      ***TBA***
 
 ###
  
