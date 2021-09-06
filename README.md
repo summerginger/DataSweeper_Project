@@ -108,7 +108,11 @@ These libraries are:
 - A python database API (DBAPI) library (i.e. psycopg2)
 
 
+
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the machine_learning folder.
+
+Taking data from the provisional database is demonstrated in the demo.ipynb file from the **machine_learning** folder.
+
 
 
 Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
@@ -119,19 +123,24 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 ### Database
 
 
-The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **Kaggle_Dataset folder.** The machine learning model will be connected as shown in the demo.ipynb file from the Kaggle_Dataset folder.
+The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** The machine learning model will be connected as shown in the demo.ipynb file from the **machine_learning** folder.
 
 The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
 
 <p align="center">
+
 <image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="500">
+
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"  width="500">
+
 </p>
 
+ 
  
  ## 7. Technologies
 
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG"
+<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG" width="800">
 </p>
 
 
