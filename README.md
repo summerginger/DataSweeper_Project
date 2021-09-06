@@ -119,7 +119,12 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 
 The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **Kaggle_Dataset folder.** The machine learning model will be connected as shown in the demo.ipynb file from the Kaggle_Dataset folder.
 
-The ERD diagram for our provisional database is also provided in the 
+The ERD diagram for our provisional database is also provided in the PostGreSQL folder
+
+<p align="center">
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"
+</p>
+
  
  ## 7. Technologies
 
