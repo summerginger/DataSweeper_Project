@@ -3,11 +3,13 @@
 ## 1. Overview of the Project
 
 
-The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant or not. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
+The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
 
-The decision of approving a credit card is mainly dependent on the personal and financial background of  the applicant. Factors like, age, gender, income, employment status,credit history and other attributes all carry weight in the approval decision. 
+The decision of approving a credit card is mainly dependent on the personal and financial background of  the applicant. Factors like, age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
-Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to loss involved in the transaction. There are two basic risks: 
+Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to loss involved in the transaction. 
+
+There are two basic risks: 
 
 - Business loss that results from not approving the good candidate
 - Financial loss that results from by approving a non-credit worthy candidate. 
