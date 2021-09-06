@@ -99,12 +99,12 @@ Connecting the machine learning model to the database is another challenge that 
 ipython-sql
 sqlalchemy
 A python database API (DBAPI) library (i.e. psycopg2)
-Taking data from the provisional database is demonstrated in the demo.ipynb file from the Kaggle_Dataset folder.
+Taking data from the provisional database is demonstrated in the demo.ipynb file from the machine_learning folder.
 
 
 ### Database
 
-The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the Kaggle_Dataset folder. The machine learning model will be connected as shown in the demo.ipynb file from the Kaggle_Dataset folder.
+The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the PostgreSQL_Database folder. The machine learning model will be connected as shown in the demo.ipynb file from the machine_learning folder.
  
  ## 7. Technologies
 
