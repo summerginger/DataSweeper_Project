@@ -98,9 +98,13 @@ Based on the dataset, what are the standard requirements for an individual to be
 
 ## 5. Data Exploration Phase
 
-### Data Cleaning and Preparation
+### Data Cleaning and Preparation (Preliminary Data Preprocessing)
+
+Before we conduct analysis and/or machine learning on our dataset, we must conduct preliminary data preprocessing. The first preliminary data preprocessing we conducted was determining "good" and "bad" applicants in the **credit_records.csv** file. As we can see from the **Overview of Dataset**, the **credit_records.csv** contains the information of all the applicants and their payment experience. From the "MONTH_BALANCE" and "STATUS" columns, we can see the status of payment of the card holder's credit account from the starting month of their credit account until the current month. From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), we have found out that credit accounts are closed and sold to a collection agency when an account has not recieved payment for 3 or more months. With this knowledge came an idea of how to determine how and applicant is "good" or "bad" for credit card companies.  
+
+
   
- However, we will drop a few columns where consideration does not apply to the prediction. 
+However, we will drop a few columns where consideration does not apply to the prediction. 
  
 ## 6. Analysis Phase 
  
