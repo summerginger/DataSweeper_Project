@@ -103,34 +103,26 @@ Based on the dataset, what are the standard requirements for an individual to be
 Before we conduct analysis and/or machine learning on our dataset, we must conduct preliminary data preprocessing. The first preliminary data preprocessing we conducted was determining "good" and "bad" applicants in the **credit_records.csv** file. As we can see from the **Overview of Dataset**, the **credit_record.csv** contains the information of all the applicants and their payment experience. From the "MONTH_BALANCE" and "STATUS" columns, we can see the status of payment of the card holder's credit account from the starting month of their credit account until the current month. From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), we have found out that credit accounts are closed and sold to a collection agency when an account has not recieved payment for 3 or more months. With this knowledge came an idea of how to determine how and applicant is "good" or "bad" for credit card companies. We decided to select applicants who have 3 or more of any late payements (i.e. 3 times or more of "STATUS" of any 0-5) to be "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. This process can be demonstrated in cells 20 to 26 of **machine_learning.ipynb**. The **credit_record.csv** file did not contain any null values, hence, no records were removed.
 
 
-The next preliminary data preprocessing we conducted was cleaning and encoding the dataset from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the "CODE_GENDER", "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "NAME_INCOME_TYPE", "NAME_EDUCATION_TYPE", "NAME_FAMILY_STATUS", "NAME_HOUSING_TYPE", and "OCCUPATION_TYPE" columns using the .get_dummies() method. Following this, we rescaled the "AMT_INCOME_TOTAL" by dividing the whole column by 10000 and created new columns for "AGE" and "EMPLOYMENT_PERIOD" by dividing 'DAYS_BIRTH' and 'DAYS_EMPLOYED' by -365 and rounding the results by 2 decimal places. We then dropped 'DAYS_BIRTH' ,'DAYS_EMPLOYED' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and 'ID' columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, encoding, and feature selection of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**.
+The next preliminary data preprocessing we conducted was cleaning and encoding the dataset from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the "CODE_GENDER", "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "NAME_INCOME_TYPE", "NAME_EDUCATION_TYPE", "NAME_FAMILY_STATUS", "NAME_HOUSING_TYPE", and "OCCUPATION_TYPE" columns using the .get_dummies() method. Following this, we rescaled the "AMT_INCOME_TOTAL" by dividing the whole column by 10000 and created new columns for "AGE" and "EMPLOYMENT_PERIOD" by dividing 'DAYS_BIRTH' and 'DAYS_EMPLOYED' by -365 and rounding the results by 2 decimal places. We then dropped 'DAYS_BIRTH' ,'DAYS_EMPLOYED' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and 'ID' columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, encoding, and feature selection of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models.
 
 ## 6. Analysis Phase 
  
 ### Machine Learning Model
 
-The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Support Vector Machines, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
+The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset, i.e. "STATUS_y", is a binary outcome, i.e. approve (1) or not approve (0) credit card applicant. Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
 
-Before any machine learning models are applied on the dataset, encoding labels, scaling and normalizing data must be done to ensure machine learning models such as SVM to perform at its optimized conditions. 
-
-The output label for this dataset will be the status of the applicant in the credit_records.csv file. As shown in Overview of Dataset, the status of the applicants are categorized into 8 outcomes (0, 1, 2, 3, 4, 5, X, and C). The challenge here is to categorize which applicant status is deemed “good” or “bad”. Hence, for this dataset, applicants who have a status of 0-5 are considered as “bad” applicants, i.e. not approved (0), and applicants who have a status of C or X are considered as “good” applicants, i.e. approved(1). This can be done with the .replace() method using the pandas library. 
-
-Connecting the machine learning model to the database is another challenge that must be overcome. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+First and foremost, we must connect the jupyter file containing the code for our machine learning models to the PostgreSQL database in order to retrieve the datasets. This will be conducted with the help of using 3 different libraries. 
 
 These libraries are:
 - ipython-sql
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
 
-
-
-
-
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the **machine_learning** folder.
 
 
+After data is imported to the notebook, we then clean, encod labels, scale, normale and merging the two datasets must be done to ensure machine learning models to perform at their optimized conditions. This has been demonstrated from **Data Cleaning and Preparation**.
 
-Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
 
 
 
