@@ -121,7 +121,7 @@ These libraries are:
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the **machine_learning** folder.
 
 
-After data is imported to the notebook, we then clean, encod labels, scale, normale and merge the two datasets must be done to ensure machine learning models to perform at their optimized conditions. This has been demonstrated in **Data Cleaning and Preparation**.
+After data is imported to the notebook, we then clean, encode labels, scale, normale and merge the two datasets must be done to ensure machine learning models to perform at their optimized conditions. This has been demonstrated in **Data Cleaning and Preparation**.
 
 
 
