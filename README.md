@@ -1,4 +1,7 @@
-# Topic : Credit Card Approval Prediction  <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+# Topic : Credit Card Approval Prediction  
+Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
+
+<img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
 ## 1. Overview of the Project
 
