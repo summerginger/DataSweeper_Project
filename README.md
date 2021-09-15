@@ -1,6 +1,8 @@
 # Topic : Credit Card Approval Prediction  
 Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
 
+[Dashboard mock up](https://docs.google.com/presentation/d/1B_2CsHUrJa0k7GhUbOF1sZwgFBDDPgowa910VE9LpYw/edit#slide=id.gc6f980f91_0_105)
+
 <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
 ## 1. Overview of the Project
@@ -184,8 +186,7 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
-
-
+ 
  
 ### GITHUB Individual Branches
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
