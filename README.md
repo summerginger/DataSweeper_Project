@@ -116,7 +116,7 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
 
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+ | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
 Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
 
