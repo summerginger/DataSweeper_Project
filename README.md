@@ -1,7 +1,7 @@
 # Topic : Credit Card Approval Prediction  
 Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
 
-[Presentation Google Slides](https://docs.google.com/presentation/d/1B_2CsHUrJa0k7GhUbOF1sZwgFBDDPgowa910VE9LpYw/edit#slide=id.gc6f980f91_0_0)
+[Presentation Google Slides](https://docs.google.com/presentation/d/1juWGbiZk-L5VhOb_4GLcMzD_PdTy-p0eJ01t_N23pk0/edit#slide=id.gf077450771_0_440)
 
 <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
