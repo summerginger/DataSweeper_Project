@@ -1,4 +1,9 @@
-# Topic : Credit Card Approval Prediction  <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+# Topic : Credit Card Approval Prediction  
+Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
+
+[Presentation Google Slides](https://docs.google.com/presentation/d/1juWGbiZk-L5VhOb_4GLcMzD_PdTy-p0eJ01t_N23pk0/edit#slide=id.gf077450771_0_440)
+
+<img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
 ## 1. Overview of the Project
 
@@ -105,23 +110,38 @@ Before we conduct analysis and/or machine learning on our dataset, we must perfo
 
 The next preliminary data preprocessing we conducted was to clean, encode, and rescale data from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the "CODE_GENDER", "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "NAME_INCOME_TYPE", "NAME_EDUCATION_TYPE", "NAME_FAMILY_STATUS", "NAME_HOUSING_TYPE", and "OCCUPATION_TYPE" columns using the .get_dummies() method. Following this, we rescaled the "AMT_INCOME_TOTAL" by dividing the whole column by 10000 and created new columns for "AGE" and "EMPLOYMENT_PERIOD" by dividing 'DAYS_BIRTH' and 'DAYS_EMPLOYED' by -365 and rounding the results by 2 decimal places. We then dropped 'DAYS_BIRTH' ,'DAYS_EMPLOYED' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and 'ID' columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, encoding, and feature selection of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models.
 
+
+
+ 
+
 ## 6. Analysis Phase 
  
 ### Machine Learning Model
 
+
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset, i.e. "STATUS_y", is a binary outcome, i.e. approve (1) or not approve (0) credit card applicant. Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
 
 First and foremost, we must connect the jupyter file containing the code for our machine learning models to the PostgreSQL database in order to retrieve the datasets. This will be conducted with the help of 3 different libraries. 
+=======
+The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
+
+![machine learning results](images/MC_results1.PNG)
+
+Connecting the machine learning model to the database is another challenge that must be overcome. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+
 
 These libraries are:
 - ipython-sql
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
 
+
 Taking data from the provisional database is demonstrated in the demo.ipynb file from the **machine_learning** folder.
 
 
 After data is imported to the notebook, we then clean, encode labels, scale, normale and merge the two datasets must be done to ensure machine learning models to perform at their optimized conditions. This has been demonstrated in **Data Cleaning and Preparation**.
+
+=======
 
 
 
@@ -176,8 +196,7 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
-
-
+ 
  
 ### GITHUB Individual Branches
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
