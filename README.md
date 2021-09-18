@@ -169,7 +169,9 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
  ## 7. Technologies
 
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG" width="800">
+
+<image src="https://user-images.githubusercontent.com/82583576/133891249-6d3e4655-dae0-496c-b080-3d1f71d48f1c.png" width="800">
+
 </p>
 
 
@@ -191,9 +193,27 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
  
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
 
+
  
 ***Resources***
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
+
+* [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
+ 
+ 
+### GITHUB Individual Branches
+Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
+ 
+- Binoy Luckoo's Branch Name:  Binoy_DeliverableN 
+- Samir Rifi's Branch Name:  samir_DeliverableN
+- Jane Huang's Branch Name: jane_DeliverableN
+- Lucas Chandra's Branch Name: lucas_DeliverableN
+
+
+ 
+***Resources***
+* [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
+
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
  
