@@ -169,7 +169,8 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
  ## 7. Technologies
 
 <p align="center">
-<image src="https://user-images.githubusercontent.com/82583576/132108627-97f92b4f-57e3-495a-8665-37374aff7df6.PNG" width="800">
+<image src="https://user-images.githubusercontent.com/82583576/133891249-6d3e4655-dae0-496c-b080-3d1f71d48f1c.png" width="800">
+
 </p>
 
 
