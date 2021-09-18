@@ -217,12 +217,3 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
  
- 
-### GITHUB Individual Branches
-Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
- 
-- Binoy Luckoo's Branch Name:  Binoy_DeliverableN 
-- Samir Rifi's Branch Name:  Samir
-- Jane Huang's Branch Name: Jane
-- Lucas Chandra's Branch Name: Lucas
-
