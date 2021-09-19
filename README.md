@@ -158,7 +158,9 @@ Now, we are ready for machine learning. And as stated in previous paragraphs, th
 
 ![machine learning results](images/MC_results1.PNG)
 
- 
+The following tables are the results for the logistic regression model for an undersampling technique called ClusterCentroids and a combination sampling technique called SMOTEENN.
+
+![machine learning results 2](images/MC_results2.PNG)
 
 
 
