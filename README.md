@@ -141,7 +141,7 @@ Taking data from the provisional database is demonstrated in the demo.ipynb file
 
 After data is imported to the notebook, we then clean, encode labels, scale, normale and merge the two datasets must be done to ensure machine learning models to perform at their optimized conditions. This has been demonstrated in **Data Cleaning and Preparation**.
 
-=======
+
 
 
 
@@ -216,4 +216,6 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
+
  
+
