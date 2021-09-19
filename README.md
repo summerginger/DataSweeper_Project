@@ -115,11 +115,9 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
  
 ### Machine Learning Model
 
-The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset, i.e. "STATUS_y", is a binary outcome, i.e. approve (1) or not approve (0) credit card applicant. Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
-
-First and foremost, we must connect the jupyter file containing the code for our machine learning models to the PostgreSQL database in order to retrieve the datasets. This will be conducted with the help of 3 different libraries. 
-=======
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
+
+
 
 ![machine learning results](images/MC_results1.PNG)
 
