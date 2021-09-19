@@ -162,9 +162,8 @@ The following tables are the results for the logistic regression model for an un
 
 ![machine learning results 2](images/MC_results2.PNG)
 
-From our results, we can see that RandomForest model and the SMOTE gave the best combination for predicting Credit Card Approval.
+From our results, we can see that RandomForest model and the SMOTE gave the best combination for predicting Credit Card Approval. However, the percision and recall for predicting "good" applicants are still low, the percision and recall for prediciting "good" applicants are around 50% which is as good as a coin toss. Having percision around 50% means that if an applicant is approved to get a card by the model, the applicant is 50% likely to get a real credit card from the credit card company. And haveing a recall/sensitivity of 50% means that if a person already own a credit card from the credit card company, the model will have 50% chance of predicting that the applicant get a credit card from the credit card company. If more time were given to optimize this model, adde
 
-It would be 
 
 
 
