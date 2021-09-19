@@ -131,7 +131,7 @@ These libraries are:
 
 
 
-### 6.Database
+## 6.Database
 
 
 The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
