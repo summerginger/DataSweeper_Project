@@ -52,6 +52,24 @@ CREATE TABLE Credit_Record (
 	STATUS_y varchar (5) NOT NULL
 );
 
+SELECT 	a.id,
+		a.CODE_GENDER,            
+		a.FLAG_OWN_CAR,                
+		a.FLAG_OWN_REALTY,             
+ 		a.CNT_CHILDREN,               
+		a.AMT_INCOME_TOTAL,                     
+		a.OCCUPATION_TYPE,    
+		a.AGE,                                                 
+		a.EMPLOYMENT_PERIOD,
+		c.months_balance,
+		c.months_from_today,
+		c.status_y
+INTO visual_features
+From  application_record as a
+inner JOIN credit_record as c
+ON a.id = c.id;
+
+
 CREATE TABLE credit_application (
 	CNT_CHILDREN VARCHAR (20),
 	AMT_INCOME_TOTAL VARCHAR (20),
