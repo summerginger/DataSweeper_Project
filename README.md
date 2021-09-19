@@ -1,9 +1,41 @@
-# Topic : Credit Card Approval Prediction  
-Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
+# Credit Card Approval Prediction 
+> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
 
-[Presentation Google Slides](https://docs.google.com/presentation/d/1juWGbiZk-L5VhOb_4GLcMzD_PdTy-p0eJ01t_N23pk0/edit#slide=id.gf077450771_0_440)
+
+> Presentation [Google Slides](https://docs.google.com/presentation/d/1juWGbiZk-L5VhOb_4GLcMzD_PdTy-p0eJ01t_N23pk0/edit#slide=id.gf077450771_0_440)
+
 
 <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+
+
+
+ ## Table of Contents 
+
+- [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
+
+- [Topic Selection Criteria](https://github.com/summerginger/DataSweeper_Project#2-topic-selection-criteria) 
+
+- [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
+     * Demographics & application data
+     * Credit Bureau data
+     * Description of data source
+     
+- [Question](https://github.com/summerginger/DataSweeper_Project#4-question-the-team-wants-to-answer-with-the-data) 
+
+- [Data Exploration and Analysis](https://github.com/summerginger/DataSweeper_Project#5-analysis-phase)
+
+- [Database](https://github.com/summerginger/DataSweeper_Project#6-database)
+
+- [Machine Learning](https://github.com/summerginger/DataSweeper_Project#machine-learning-model)
+
+- [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#8-result-of-the-analysis)
+
+- [Recommendations](https://github.com/summerginger/DataSweeper_Project#9-recommendations)
+
+- [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
+
+- Data Citations
+
 
 ## 1. Overview of the Project
 
@@ -38,9 +70,9 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 
 1. **Demographics & application data - "application_record.csv"**
 
-   This data has been provided by the applicants at the time of the credit card application. It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
+This data has been provided by the applicants at the time of the credit card application. It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
    
- 
+
 |application_record.csv |||
 | ------------- |-------------| -----|
 | Feature name        |    Explanation       |  Remarks/Variable Type |
@@ -62,7 +94,6 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 | FLAG_EMAIL	| Is there an email  | Binary   |
 |  OCCUPATION_TYPE |	Occupation   | Categorical   |
 |  CNT_FAM_MEMBERS |	Family size  | Continuous   |
-
 
 ##
 
@@ -92,21 +123,19 @@ This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approv
 - Having a Work Phone or not
 
 
-## 4. Question the team wants to answer with the data
+## 4. Question 
 
 Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
-
 
 
 ## 5. Analysis Phase 
 
 ### Data Cleaning and Preparation (Preliminary Data Preprocessing)
-
+~~~
 Before we conduct analysis and/or machine learning on our dataset, we must perform preliminary data preprocessing. The first preliminary data preprocessing we conducted was to determining "good" and "bad" applicants in the **credit_records.csv** file. As we can see from **Overview of Dataset**, the **credit_record.csv** contains the information of all the applicants and their payment experience. We can see the status of payment of the card holder's credit account from the starting month of their credit account until the current month. From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), we have found that credit accounts are closed and sold to a collection agency when an account has not recieved payment for 3 or more months. With this added information came the idea of how to determine how and applicant is "good" or "bad" for credit card companies. We decided to select applicants who have 3 or more of late payements (i.e. 3 times or more of "STATUS" of any 0-5) to be "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants in under the name **new_credit** and the process of the preliminary data preprocessing steps above are demonstrated in cells 20 to 26 of **machine_learning.ipynb**. 
 
-
 The next preliminary data preprocessing we conducted was to clean, encode, and rescale data from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the gender, owning a car, owning realty, income category, education level, Marital status, housing type, and occupation columns using the .get_dummies() method. Following this, we rescaled the annual income column by dividing the whole column by 10000 and created new columns for age and employment period as they were initially counted in days and not years. We then dropped 'DAYS_BIRTH' ,'DAYS_EMPLOYED' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and 'ID' columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, encoding, and feature selection of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models.
- 
+~~~ 
 ### Machine Learning Model
 
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. We will also be using 4 different sampling techniques to handle imbalanced datasets as the number of approved applicants in our dataset is much smaller than the number of rejected applicants, meaning our dataset is imbalanced. At the end of the analysis, we will choose the best combination of sampling technique and machine learning model that can predict credit card approval.
@@ -119,7 +148,6 @@ These libraries are:
 - ipython-sql
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
-
 
 
 
@@ -142,9 +170,7 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 <p align="center">
 
-<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="500">
-
-<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png"  width="500">
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="400">
 
 </p>
 
@@ -154,13 +180,12 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 <p align="center">
 
-<image src="https://user-images.githubusercontent.com/82583576/133891249-6d3e4655-dae0-496c-b080-3d1f71d48f1c.png" width="800">
+<image src="https://user-images.githubusercontent.com/82583576/133891249-6d3e4655-dae0-496c-b080-3d1f71d48f1c.png" width="500">
 
 </p>
 
 
- 
- 
+  
 ## 8. Result of the Analysis
       ***TBA***
 
@@ -177,13 +202,6 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
  
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
 
-
- 
-***Resources***
-* [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
-
-* [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
- 
  
 ### GITHUB Individual Branches
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
@@ -193,7 +211,10 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 - Jane Huang's Branch Name: jane_DeliverableN
 - Lucas Chandra's Branch Name: lucas_DeliverableN
 
+## Resources
+* [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
+* [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
 
  
 
