@@ -115,13 +115,10 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
  
 ### Machine Learning Model
 
-The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
+The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. We will also be using 4 different sampling techniques to handle imbalanced datasets as the number of approved applicants in our dataset is much smaller than the number of rejected applicants, meaning our dataset is imbalanced. At the end of the analysis, we will choose the best combination of sampling technique and machine learning model that can predict credit card approval.
 
 
-
-![machine learning results](images/MC_results1.PNG)
-
-Connecting the machine learning model to the database is another challenge that must be overcome. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+But before we start our machine learning process, we must first import the dataset from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
 
 
 These libraries are:
@@ -130,10 +127,9 @@ These libraries are:
 - A python database API (DBAPI) library (i.e. psycopg2)
 
 
-Taking data from the provisional database is demonstrated in the demo.ipynb file from the **machine_learning** folder.
 
 
-After data is imported to the notebook, we then clean, encode labels, scale, normale and merge the two datasets must be done to ensure machine learning models to perform at their optimized conditions. This has been demonstrated in **Data Cleaning and Preparation**.
+![machine learning results](images/MC_results1.PNG)
 
 
 
