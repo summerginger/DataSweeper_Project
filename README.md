@@ -98,8 +98,7 @@ Based on the dataset, what are the standard requirements for an individual to be
 
 
 
-
-## 5. Data Exploration Phase
+## 5. Analysis Phase 
 
 ### Data Cleaning and Preparation (Preliminary Data Preprocessing)
 
@@ -107,11 +106,6 @@ Before we conduct analysis and/or machine learning on our dataset, we must perfo
 
 
 The next preliminary data preprocessing we conducted was to clean, encode, and rescale data from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the gender, owning a car, owning realty, income category, education level, Marital status, housing type, and occupation columns using the .get_dummies() method. Following this, we rescaled the annual income column by dividing the whole column by 10000 and created new columns for age and employment period as they were initially counted in days and not years. We then dropped 'DAYS_BIRTH' ,'DAYS_EMPLOYED' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and 'ID' columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, encoding, and feature selection of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models.
-
-
-
-
-## 6. Analysis Phase 
  
 ### Machine Learning Model
 
@@ -137,7 +131,7 @@ These libraries are:
 
 
 
-### Database
+### 6.Database
 
 
 The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
