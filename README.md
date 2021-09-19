@@ -41,8 +41,6 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
    This data has been provided by the applicants at the time of the credit card application. It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
    
  
-
- 
 |application_record.csv |||
 | ------------- |-------------| -----|
 | Feature name        |    Explanation       |  Remarks/Variable Type |
@@ -112,12 +110,10 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
 
 
 
- 
 
 ## 6. Analysis Phase 
  
 ### Machine Learning Model
-
 
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable for this dataset, i.e. "STATUS_y", is a binary outcome, i.e. approve (1) or not approve (0) credit card applicant. Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data. 
 
@@ -210,12 +206,6 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 - Lucas Chandra's Branch Name: lucas_DeliverableN
 
 
- 
-***Resources***
-* [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
-
-
-* [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
 
  
 
