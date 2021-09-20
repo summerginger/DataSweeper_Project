@@ -211,7 +211,7 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 ## 9. Dashboard Description
  
-Tools: JavaScript, HTML
+Tools: JavaScript, HTML, D3.Js
  
 Interactive Features : 
  
