@@ -25,7 +25,7 @@
 
 - [Database](https://github.com/summerginger/DataSweeper_Project#6-database)
 
-- [Machine Learning](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#5-machine-learning)
+- [Machine Learning](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#5--machine-learning)
 
 - [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#8-result-of-the-analysis)
 
