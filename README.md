@@ -154,7 +154,7 @@ These libraries are:
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
 
-#### Splitting Data
+#### Feature Selection and Splitting Data
 After importing the dataset, we then selected our features to be all the columns execpt for column "STATUS_y" and the target variable to be "STATUS_y". We then continued to split the dataset into training and testing sets, 75% training and 25% testing and we scaled the data using StandardScaler() for the features of the training and testing sets. 
 
 The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
