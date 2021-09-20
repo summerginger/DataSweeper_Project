@@ -116,3 +116,11 @@ CREATE TABLE credit_application (
 	EMPLOYMENT_PERIOD VARCHAR (20),                                
 	STATUS_y VARCHAR (20) 
 );
+
+lists:        
+-- 		a.NAME_FAMILY_STATUS,          
+-- 		a.NAME_HOUSING_TYPE,                              
+-- 		a.FLAG_MOBIL,                 
+-- 		a.FLAG_WORK_PHONE,             
+-- 		a.FLAG_PHONE,                  
+-- 		a.FLAG_EMAIL,       
