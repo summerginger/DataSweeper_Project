@@ -148,8 +148,6 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
 
 ## 6. Machine Learning
  
-> Preliminary data preprocessing 
-
 The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
 
 ### Connect machine learning model with databse
