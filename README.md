@@ -6,8 +6,6 @@
 
 <img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
-
-
  ## Table of Contents 
 
 - [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
@@ -15,9 +13,13 @@
 - [Topic Selection Criteria](https://github.com/summerginger/DataSweeper_Project#2-topic-selection-criteria) 
 
 - [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
+
+<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
+
      * Demographics & application data
      * Credit Bureau data
      * Description of data source
+     
 
 - [Question](https://github.com/summerginger/DataSweeper_Project#4-question-the-team-wants-to-answer-with-the-data) 
 
