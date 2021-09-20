@@ -33,9 +33,7 @@
 
 - [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-- [Dashboard]
-
-
+- [Dashboard](https://github.com/summerginger/DataSweeper_Project#8-dashboard-description)
 
 - Data Citations
 
