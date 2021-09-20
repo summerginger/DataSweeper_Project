@@ -128,8 +128,12 @@ This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approv
 
 ## 4. Question the team wants to answer with the data
 
-Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
+1. Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
 
+2. Can the model minimize the following risks? 
+
+- Loss from not approving the good applicant
+- Loss resulting from approving a non-credit worthy candidate
 
 
 ## 5. Analysis Phase 
