@@ -33,6 +33,10 @@
 
 - [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
+- [Dashboard]
+
+
+
 - Data Citations
 
 
@@ -192,14 +196,25 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 </p>
 
+## 8. Dashboard Description
+ 
+Tools: JavaScript, HTML
+ 
+Interactive Features : 
+ 
+- Age
+- Education
+- Occupation
+- Net income
+- Number of family members
 
  
  
-## 8. Result of the Analysis
+## 9. Result of the Analysis
       ***TBA***
 
 
-## 9. Recommendations
+## 10. Recommendations
       ***TBA***
 
 
@@ -211,13 +226,6 @@ We will use whatsapp,slack,zoom meeting, Github project and [google docs](https:
  
 ![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
 
-
- 
-***Resources***
-* [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
-
-* [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
- 
  
 ### GITHUB Individual Branches
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
