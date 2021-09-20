@@ -27,7 +27,7 @@
 
 - [Database](https://github.com/summerginger/DataSweeper_Project#6-database)
 
-- [Machine Learning](https://github.com/summerginger/DataSweeper_Project#machine-learning-model)
+- [Machine Learning](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#6-machine-learning)
 
 - [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#8-result-of-the-analysis)
 
@@ -150,7 +150,7 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
 
 The purpose of this study is to find the best machine learning model to predict credit card approval for future credit card applicants. The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
 
- - Connect machine learning model with databse
+ ### Connect machine learning model with databse
 But before we start our machine learning process, we must first import the dataset from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
 
 
@@ -159,12 +159,12 @@ These libraries are:
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
 
-- Feature Selection and Splitting Data
+### Feature Selection and Splitting Data
 After importing the dataset, we then selected our features to be all the columns execpt for column "STATUS_y" and the target variable to be "STATUS_y". We then continued to split the dataset into training and testing sets, 75% training and 25% testing and we scaled the data using StandardScaler() for the features of the training and testing sets. 
 
 The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 
-- Balancing Data and Results
+### Balancing Data and Results
 Now, we are ready for machine learning. The dataset is unbalanced and to address this, we will be using sampling techniques to balance the dataset. At the end of the analysis, we will choose the best combination of sampling technique and machine learning model that can predict credit card approval. The first two sampling technique that we used are both oversampling technique called Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE). The results for Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees for both oversampling techniques are shown in the tables below.
 
 ![machine learning results](images/MC_results1.PNG)
