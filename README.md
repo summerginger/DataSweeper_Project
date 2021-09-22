@@ -1,10 +1,12 @@
-<img align="center" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
-
+<!-- <img align="left" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+ -->
 
 # Credit Card Approval Prediction 
 > Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
 
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
+
+<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
 
  ## Table of Contents 
 
@@ -14,7 +16,6 @@
 
 - [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
 
-<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
 
      * Demographics & application data
      * Credit Bureau data
