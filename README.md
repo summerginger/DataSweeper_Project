@@ -1,10 +1,12 @@
+<p align="center">
+<img src="https://user-images.githubusercontent.com/82583576/134264658-70a9db96-b267-49f3-90f2-3c1b09e0d839.PNG" width="1000" height="100">
+</p>     
+
 # Credit Card Approval Prediction 
-> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
+
 
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
 
-
-<img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
 
  ## Table of Contents 
 
@@ -14,12 +16,8 @@
 
 - [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
 
-<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
 
-     * Demographics & application data
-     * Credit Bureau data
-     * Description of data source
-     
+        
 
 - [Question](https://github.com/summerginger/DataSweeper_Project#4-question-the-team-wants-to-answer-with-the-data) 
 
@@ -214,7 +212,7 @@ Interactive Features :
 - Net income
 - Number of family members
 
- 
+> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
  
 ## 9. Result of the Analysis
       ***TBA***
@@ -224,15 +222,6 @@ Interactive Features :
       ***TBA***
 
 
-
-## Team communication protocols
- 
-This week, each team member will choose a shape, with each shape responsible for a specific task. The shapes to choose from are square, circle, triangle, and X. 
-We will use whatsapp,slack,zoom meeting, Github project and [google docs](https://docs.google.com/document/d/1NugbKt5vuU91jPWE3nzVjTbBYoNdhf9_9ET2l-FNRmI/edit?usp=sharing) tools for communications.
- 
-![1st segment task assigned](https://user-images.githubusercontent.com/82733723/131895610-d1dd9b98-d97b-4531-8029-8e3862d66451.png) 
-
- 
 ### GITHUB Individual Branches
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
  
@@ -247,4 +236,6 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
  
-
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png" width="600" height="300">
+</p>
