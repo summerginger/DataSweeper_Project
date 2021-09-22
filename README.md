@@ -8,15 +8,6 @@
 
 
  ## Table of Contents 
-<table>
-  <tr>
-    <td>- Overview of the Project "https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project"</td>
-    <td>Two</td>
-  </tr>
-  <tr>
-    <td colspan="2">Three</td>
-  </tr>
-</table>
 
 - [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
 
