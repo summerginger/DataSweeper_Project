@@ -1,10 +1,13 @@
+<img align="center" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+
+
 # Credit Card Approval Prediction 
 > Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
 
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
 
 
-<img align="right" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
+
 
  ## Table of Contents 
 
