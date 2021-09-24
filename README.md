@@ -1,12 +1,16 @@
-<!-- <img align="left" src="https://user-images.githubusercontent.com/82733723/131945205-72772eea-1781-4977-ac31-f0f8327ed418.png">
- -->
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/82583576/134264658-70a9db96-b267-49f3-90f2-3c1b09e0d839.PNG" width="1000" height="100">
+</p>     
+
 
 # Credit Card Approval Prediction 
-> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
 
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
 
+
 <img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
+
 
  ## Table of Contents 
 
@@ -17,10 +21,7 @@
 - [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
 
 
-     * Demographics & application data
-     * Credit Bureau data
-     * Description of data source
-     
+        
 
 - [Question](https://github.com/summerginger/DataSweeper_Project#4-question-the-team-wants-to-answer-with-the-data) 
 
@@ -142,7 +143,9 @@ This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approv
 ### Data Cleaning and Preparation 
 
 #### Choosing "good" and "bad" applicants
-Before we conduct analysis and/or machine learning on our dataset, we must perform preliminary data preprocessing. The first preliminary data preprocessing we conducted was to determining "good" and "bad" applicants in the **credit_records.csv** file. As we can see from **Overview of Dataset**, the **credit_record.csv** contains the information of all the applicants and their payment experience. We can see the status of payment of the card holder's credit account from the starting month of their credit account until the current month. From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), we have found that credit accounts are closed and sold to a collection agency when an account has not recieved payment for 3 or more months. With this added information came the idea of how to determine how and applicant is "good" or "bad" for credit card companies. We decided to select applicants who have 3 or more of late payements (i.e. 3 times or more of "STATUS" of any 0-5) to be "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants in under the name **new_credit** and the process of the preliminary data preprocessing steps above are demonstrated in cells 20 to 26 of **machine_learning.ipynb**. 
+Preliminary data preprocessing must be completed before any analysis and/or machine learning models can be used on the dataset. 
+
+The first preliminary data preprocessing we conducted was to determining "good" and "bad" applicants in the **credit_records.csv** file. As we can see from **Overview of Dataset**, the **credit_record.csv** contains the information of all the applicants and their payment experience. We can see the status of payment of the card holder's credit account from the starting month of their credit account until the current month. From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), we have found that credit accounts are closed and sold to a collection agency when an account has not recieved payment for 3 or more months. With this added information came the idea of how to determine how and applicant is "good" or "bad" for credit card companies. We decided to select applicants who have 3 or more of late payements (i.e. 3 times or more of "STATUS" of any 0-5) to be "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants in under the name **new_credit** and the process of the preliminary data preprocessing steps above are demonstrated in cells 20 to 26 of **machine_learning.ipynb**. 
 
 #### Cleaning and encoding data
 The next preliminary data preprocessing we conducted was to clean, encode, and rescale data from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the gender, owning a car, owning realty, income category, education level, Marital status, housing type, and occupation columns using the .get_dummies() method. Following this, we rescaled the annual income column by dividing the whole column by 10000 and created new columns for age and employment period as they were initially counted in days and not years. We then dropped days of birth, days of employement ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and id columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models, and export the merged dataset as a csv file for us to import to the PostgreSQL databse.
@@ -216,6 +219,10 @@ Interactive Features :
 - Number of children
  -Number of car
 
+
+
+> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
+ 
 ## 9. Result of the Analysis
       ***TBA***
 
@@ -223,8 +230,25 @@ Interactive Features :
 ## 10. Recommendations
       ***TBA***
 
+
+
+### GITHUB Individual Branches
+Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
+ 
+- Binoy Luckoo's Branch Name:  Binoy_DeliverableN 
+- Samir Rifi's Branch Name:  samir_DeliverableN
+- Jane Huang's Branch Name: jane_DeliverableN
+- Lucas Chandra's Branch Name: lucas_DeliverableN
+
+
+
 ## Resources
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
  
+
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png" width="600" height="300">
+</p>
+
