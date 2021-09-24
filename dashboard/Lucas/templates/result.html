@@ -29,8 +29,9 @@
             </ul>
         </div>
         </nav>
-        
-        <p>{{predictions}}</p>
+        {% if predictions == 0 %}
+        <p>You are rejected my model, please try again</p>
+        {% endif %}
         
 
         <!-- Optional JavaScript; choose one of the two! -->
