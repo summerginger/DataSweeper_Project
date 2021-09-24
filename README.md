@@ -221,7 +221,7 @@ Interactive Features :
 
 
 
-> Dashboard [click here](https://github.com/summerginger/DataSweeper_Project/blob/main/Project.html)
+> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
  
 ## 9. Result of the Analysis
       ***TBA***
