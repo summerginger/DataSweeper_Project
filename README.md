@@ -167,11 +167,16 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 ### Balancing Data and Machine learning Results
 Now, we are ready for machine learning. The dataset is unbalanced and to address this, we will be using sampling techniques to balance the dataset. At the end of the analysis, we will choose the best combination of sampling technique and machine learning model that can predict credit card approval. The first two sampling technique that we used are both oversampling technique called Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE). The results for Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees for both oversampling techniques are shown in the tables below.
 
-![machine learning results](images/MC_results1.PNG)
+<p align="center">
+<image src ="https://user-images.githubusercontent.com/82583576/134784793-6d262ba1-9e90-478e-9626-c4af3d8e406a.PNG" width="600">
+</p>
 
 The following tables are the results for the logistic regression model for an undersampling technique called ClusterCentroids and a combination sampling technique called SMOTEENN.
 
-![machine learning results 2](images/MC_results2.PNG)
+<p align="center">
+<image src = "https://user-images.githubusercontent.com/82583576/134784894-61a6c3e8-f936-41c3-9bd9-a8ee01dcd32f.PNG" width="600">
+</p>
+ 
 
 > Limitations and benefits
 
