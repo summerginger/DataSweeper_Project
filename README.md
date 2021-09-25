@@ -225,7 +225,9 @@ Matplotlib is used for all other charts within the project.
 Google Slides have been used to walk the client through the methodologies used, the findings from the data set amd commentaries about how the machine learning model will help the bank with its credit card application approval process.
  
 A dashboard using JavaScript, HTML and CSS have been used for a live demonstration of the project's findings.
-Flask and Pickle have also been used to demonstrate the interactivity of the model. 
+Flask and Pickle have also been used to demonstrate the interactivity of the model. The Pickle module has been used to enable applicants to input data in the model and have an instantaneous reply with regards to the application's status.
+ 
+The dashboard is hosted on GitHub Pages.
  
 ## 8. Dashboard Description
  
