@@ -202,7 +202,7 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 <p align="center">
 
-<image src="https://user-images.githubusercontent.com/82583576/133891249-6d3e4655-dae0-496c-b080-3d1f71d48f1c.png" width="500">
+<image src= "https://user-images.githubusercontent.com/82583576/134785354-0b6a2c88-1507-45f9-a261-d072eab33201.png" width="800" height="500">
 
 </p>
 
