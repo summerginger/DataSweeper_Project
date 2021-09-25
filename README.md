@@ -192,7 +192,7 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 <p align="center">
 
-<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="400">
+<image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="600">
 
 </p>
 
@@ -202,10 +202,31 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 
 <p align="center">
 
-<image src= "https://user-images.githubusercontent.com/82583576/134785354-0b6a2c88-1507-45f9-a261-d072eab33201.png" width="800" height="500">
+<image src= "https://user-images.githubusercontent.com/82583576/134785783-062206f6-bde2-4ec5-bd60-02b30856716a.png" width="800" height="500">
 
 </p>
 
+As illustrated above, Python in combination with multiple librairies and tools were used for the project.
+ 
+**Data Cleaning and Analysis**
+Pandas and NumPy libraries in Jupyter notebook was used to clean data and perform exploratory analysis. 
+
+**Database**
+PostgreSQL was used to create the database tables and AWS RDS used for data storage.
+
+**Machine Learning**
+Scikit-learn was the machine learning library used to create the Oversampling and Undersampling models. 
+
+**Visualization** 
+Seaborn SNS is the library used to create graphics for the Confusion Matrices.
+Matplotlib is used for all other charts within the project.
+ 
+**Presentation and Dashboard**
+Google Slides have been used to walk the client through the methodologies used, the findings from the data set amd commentaries about how the machine learning model will help the bank with its credit card application approval process.
+ 
+A dashboard using JavaScript, HTML and CSS have been used for a live demonstration of the project's findings.
+Flask and Pickle have also been used to demonstrate the interactivity of the model. 
+ 
 ## 8. Dashboard Description
  
 Tools: JavaScript, HTML, D3.Js
