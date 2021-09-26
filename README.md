@@ -30,7 +30,7 @@
 
 8. [Dashboard](https://github.com/summerginger/DataSweeper_Project#9-dashboard-description)
 
-9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#8-result-of-the-analysis)
+9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#9-result-of-the-analysis)
 
 10. [Recommendations](https://github.com/summerginger/DataSweeper_Project#9-recommendations)
 
