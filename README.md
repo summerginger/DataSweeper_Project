@@ -28,11 +28,11 @@
 
 7. [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-8. [Dashboard](https://github.com/summerginger/DataSweeper_Project#9-dashboard-description)
+8. [Dashboard](https://github.com/summerginger/DataSweeper_Project#8-dashboard-description)
 
-9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#9-result-of-the-analysis)
+9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
 
-10. [Recommendations](https://github.com/summerginger/DataSweeper_Project#9-recommendations)
+10. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
 
 11. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
 
