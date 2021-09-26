@@ -220,7 +220,8 @@ Interactive Features :
 - Number of children
  -Number of car
 
-> Dashboard Display[click here](https://summerginger.github.io/DataSweeper_Project/) 
+> Dashboard Display[click here](https://summerginger.github.io/DataSweeper_Project/)
+ 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
  
