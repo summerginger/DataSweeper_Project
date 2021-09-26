@@ -1,166 +1,83 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Credit Card Approval Prediction</title>
-  <link rel="stylesheet" 
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="static/css/style.css">
-  <!-- boxicon CDN link -->
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <!-- chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-<body>
-  <header>
-    <h1> 
-      <i class='bx bxl-python'></i>
-      Providence Bank
-      <br> Credit Card Approval Model </h1>
-  </header>
-  <div class="row">
-    <div class="topnav" style="padding-left:200px">
-    <div class="col-md-12 text-center">
-      <a class = "active" href="index.html" width=300"><b>Project </b> 
-        <a href="datasets.html"  style="color:rgb(3, 3, 27);"><b>Data Exploration</b>
-        <a  href="ML.html" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '100px')" 
-        onMouseout="delayhidemenu()"  style="color:rgb(3, 3, 27);"> <b>Machine Learning </b>
-        <a  href="livedemo.html"  style="color:rgb(3, 3, 27);"><b> Live Demo </b>
-        <a  href="recommendations.html" style="color:rgb(3, 3, 27);"> <b> Recommendations </b>
-        <a  href="contactus.html"  style="color:rgb(3, 3, 27);"><b> Contact us </b></a>
-  </div>
-  </div>
-</div>
-          <div class= "container">
-            <h2>Overview of the Project</h2>
-            <p1 class="center" >The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant. 
-              Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
-              The decision of approving a credit card is mainly dependent on the personal and financial background of the applicant. 
-              Factors like, age, gender, income, employment status, 
-              
-              credit history and other attributes all carry weight in the approval decision.
+    <title>DataSweeper Project</title>
+  </head>
+  <body>
+    <div class="container-fluid">  
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DataSweeper Technologies Inc.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home Page<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('prediction_form') }}">Machine Learning Prediction</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1>Credit Card Application Assessment</h1>
+
+        </div>
         
-              Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to loss involved in the transaction.
-              <img align="right" style="width:500px;" src="images/card.jpg">
-              <br>There are two basic risks:
-              
-              <li>Business loss that results from not approving the good candidate.</li>
-             
-              <li>Financial loss that results from by approving a non-credit worthy candidate.</li>
-              
-              It is very important to manage credit risk and handle challenges efficiently for credit decision as it can have adverse effects on credit management.
-            </p1>
-            <h2>Topic Selection Criteria </h2>
-            <p1>In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, 
-              including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. 
-              To prenet its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance.
-              The primary objective of this analysis is to implement the data mining techniques on a credit card applicant dataset. Data-based conclusions about probability of repayment can be derived and recommendations can be put forward.
-              <br>
-              Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models,
-              recommendations will be provided so the financial institution can choose which model to use. 
-              </p1>
-          </section>
-        </div>    
-</body>
-<footer>
-  <h1 style="color:  black; font-size: xx-large;" > 
-    <i class='bx bx-mail-send' ></i>
-    Contact Us 
-  </h1>
-  <a style="color:rgb(3, 3, 27);" href="mailto:binoy@mailinator.com"> <b>Binoy </b></a>
-  <a style="color:rgb(3, 3, 27);" href="mailto:samir@mailinator.com"> <b>Samir</b></a>
-  <a style="color:rgb(3, 3, 27);" href="mailto:janehcanada@gmail.com"> <b>Jane</b></a>
-  <a style="color:rgb(3, 3, 27);" href="mailto:lucas@mailinator.com"> <b>Lucas <b></b></a>
-</footer>
 
-=======
-<!DOCTYPE html>
-<html lang="en">
+        <!-- Optional JavaScript; choose one of the two! -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Credit Card Approval Prediction</title>
-  <link rel="stylesheet" 
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- boxicon CDN link -->
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <!-- chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-</head>
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-<body>
-  <header>
-    <h1> 
-      <i class='bx bxl-python'></i>
-      Providence Bank
-      <br> Credit Card Approval Model </h1>
-  </header>
-  <div class="row">
-    <div class="topnav" style="padding-left:200px">
-    <div class="col-md-12 text-center">
-      <a class = "active" href="index.html" width=300"><b>Project </b> 
-        <a href="datasets.html"  style="color:rgb(3, 3, 27);"><b>Data Exploration</b>
-        <a  href="ML.html" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '100px')" 
-        onMouseout="delayhidemenu()"  style="color:rgb(3, 3, 27);"> <b>Machine Learning </b>
-        <a  href="livedemo.html"  style="color:rgb(3, 3, 27);"><b> Live Demo </b>
-        <a  href="recommendations.html" style="color:rgb(3, 3, 27);"> <b> Recommendations </b>
-        <a  href="contactus.html"  style="color:rgb(3, 3, 27);"><b> Contact us </b></a>
-  </div>
-  </div>
-</div>
-          <div class= "container">
-            <h2>Overview of the Project</h2>
-            <p1 class="center" >The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant. 
-              Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
-              The decision of approving a credit card is mainly dependent on the personal and financial background of the applicant. 
-              Factors like, age, gender, income, employment status, 
-              
-              credit history and other attributes all carry weight in the approval decision.
-        
-              Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to loss involved in the transaction.
-              <img align="right" style="width:500px;" src="images/card.jpg">
-              <br>There are two basic risks:
-              
-              <li>Business loss that results from not approving the good candidate.</li>
-             
-              <li>Financial loss that results from by approving a non-credit worthy candidate.</li>
-              
-              It is very important to manage credit risk and handle challenges efficiently for credit decision as it can have adverse effects on credit management.
-            </p1>
-            <h2>Topic Selection Criteria </h2>
-            <p1>In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, 
-              including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. 
-              To prenet its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance.
-              The primary objective of this analysis is to implement the data mining techniques on a credit card applicant dataset. Data-based conclusions about probability of repayment can be derived and recommendations can be put forward.
-              <br>
-              Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models,
-              recommendations will be provided so the financial institution can choose which model to use. 
-              </p1>
-          </section>
-        </div>    
-</body>
-<footer>
-  <h1 style="color:  black; font-size: xx-large;" > 
-    <i class='bx bx-mail-send' ></i>
-    Contact Us 
-  </h1>
-  <a style="color:rgb(3, 3, 27);" href="mailto:binoy@mailinator.com"> <b>Binoy </b></a>
-  <a style="color:rgb(3, 3, 27);" href="mailto:samir@mailinator.com"> <b>Samir</b></a>
-  <a style="color:rgb(3, 3, 27);" href="mailto:janehcanada@gmail.com"> <b>Jane</b></a>
-  <a style="color:rgb(3, 3, 27);" href="mailto:lucas@mailinator.com"> <b>Lucas <b></b></a>
-</footer>
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        -->
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h2>Our Story</h2>
+                <p class="lead">
+                    <strong>DTI added Providence Bank, located in the Bahamas, to its client portfolio.</strong><br>
+                    The bank wants to minimize the risks involved in its credit card client portfolio.<br>
+                    DTI’s first mandate is to develop a machine learning model that can predict whether a<br>
+                    credit card applicant will be approved or denied and identify the applicant attributes<br>
+                    that have a major impact on the decision.<br>
+                    The decision of approving a credit card is mainly dependent on the personal <br>
+                    and financial background of the applicant. Factors like, age, gender, income, <br>
+                    employment status, credit history and other attributes all carry weight in the approval decision.
+
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2>Want to get a prediction?</h2>
+                <p class="lead">
+                    Click <a href="{{ url_for('prediction_form') }}">here</a> to get a prediction on whether a Credit Card Company <br>
+                    can give you a credit card today!
+                </p>
+            </div>
+        </div>
+    </div>
+  </body>
+  <style>
+    body {
+    background-color: #212121;
+    color: white
+    }
+    .jumbotron{
+        color: #212121
+    }
+  </style>
 </html>
