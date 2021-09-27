@@ -87,23 +87,24 @@
                    <ul class="bg-dark list-group"> 
                     <li class="list-group-item bg-dark">
                       <label for="fname"> First Name </label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name ..">
                   
                       <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name ..">
                   
                       <label for="country">Country</label>
                       <select id="country" name="country">
+                        <option value="select">--Select--</option>
                         <option value="australia">Australia</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
                       </select>
                       
-                      <label for="age"> Age (in years) </label>
-                      <input type="text" name="age">
+                      <label for="age"> Age </label>
+                      <input type="text" name="age" placeholder="Number of years . ." >
 
-                      <label for="CNT_CHILDREN"> Number of Children :</label>
-                      <input type="number" name="CNT_CHILDREN" id="CNT_CHILDREN" required/>
+                      <label for="CNT_CHILDREN"> Children :</label>
+                      <input type="number" name="CNT_CHILDREN" id="CNT_CHILDREN" placeholder="Number of children . ." required/>
 
                       <label for="AMT_INCOME_TOTAL"> Annual Income :  </label>
                       <br>
@@ -115,26 +116,32 @@
                       <lable for="employment_period">Employement Period (in years) : </lable> <br>
                       <input type="number" name="EMPLOYMENT_PERIOD" required/>
                       <br>
+                      
                       <label for="CODE_GENDER">Gender:</label> <br>
                       <select name="CODE_GENDER" id="CODE_GENDER" required>
-                       <option value="M">Male</option>
+                        <option value="select">--Select--</option>
+                        <option value="M">Male</option>
                        <option value="F">Female</option>
                       </select>  
                
-                      <label for="FLAG_OWN_CAR">Own a car:</label>
+                      <label for="FLAG_OWN_CAR"> Own a car: </label>
                       <select id="FLAG_OWN_CAR" name="FLAG_OWN_CAR" required>
+                      <option value="select">--Select--</option>
                        <option value="Y">Yes</option>
                        <option value="N">No</option>
                       </select>
                   
                       <label for="FLAG_OWN_REALTY">Own realty:</label>
                       <select id="FLAG_OWN_REALTY" name="FLAG_OWN_REALTY" required>
+                       <option value="select">--Select--</option>
                        <option value="Y">Yes</option>
                        <option value="N">No</option>
                       </select>
                
                      <label for="NAME_INCOME_TYPE">Type of Income : </label>
+                    
                      <select name="NAME_INCOME_TYPE" id="NAME_INCOME_TYPE" required>
+                      <option value="select">--Select--</option>
                        <option value="Commercial associate">Commercial associate</option>
                        <option value="Pensioner">Pensioner</option>
                        <option value="State servant">State servant</option>
@@ -146,6 +153,7 @@
                     <li class="list-group-item bg-dark">
                      <label for="NAME_EDUCATION_TYPE">Highest Education:</label> <br>
                      <select id="NAME_EDUCATION_TYPE" name="NAME_EDUCATION_TYPE" required>
+                      <option value="select">--Select--</option>
                        <option value="Academic degree">Academic degree</option>
                        <option value="Higher education">Higher education</option>
                        <option value="Incomplete higher">Incomplete higher</option>
@@ -155,6 +163,7 @@
                   
                      <label for="NAME_FAMILY_STATUS">Family Status : </label> <br>
                      <select id="NAME_FAMILY_STATUS" name="NAME_FAMILY_STATUS" required>
+                      <option value="select">--Select--</option>
                        <option value="Civil marriage">Civil marriage</option>
                        <option value="Married">Married</option>
                        <option value="Separated">Separated</option>
@@ -164,6 +173,7 @@
                     
                      <label for="NAME_HOUSING_TYPE">Housing : </label> <br>
                        <select id="NAME_HOUSING_TYPE" name="NAME_HOUSING_TYPE" required>
+                        <option value="select">--Select--</option>
                          <option value="Co-op apartment">Co-op apartment</option>
                          <option value="House / apartment">House / apartment</option>
                          <option value="Municipal apartment">Municipal apartment</option>
@@ -174,6 +184,7 @@
    
                      <label for="OCCUPATION_TYPE">Occupation : </label> <br>
                        <select id="OCCUPATION_TYPE" name="OCCUPATION_TYPE" required>
+                        <option value="select">--Select--</option>
                          <option value="Accountants">Accountants</option>
                          <option value="Cleaning staff">Cleaning staff</option>
                          <option value="Cooking staff">Cooking staff</option>
