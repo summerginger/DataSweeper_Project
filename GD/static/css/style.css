@@ -92,7 +92,7 @@ p {
 li{
   color:whitesmoke;
 }
-.Label{
+Label{
   color:beige
 }
 a:link, a:visited {
@@ -112,3 +112,4 @@ a:hover, a:active {
   background-color: #9ea6beda;
   color: whitesmoke;
 }
+
