@@ -148,7 +148,8 @@ The next preliminary data preprocessing we conducted was to clean, encode, and r
 ### Description of Machine Learning 
 The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
 
-### Connecting machine learning model with databse
+### Connecting the Database to the Machine Learning Models
+
 But before we start our machine learning process, we must first import the dataset from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
 
 These libraries are:
@@ -164,21 +165,33 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 
  >  Preliminary feature engineering and preliminary feature selection, including decision-making process
    
-### Balancing Data and Machine learning Results
-Now, we are ready for machine learning. The dataset is unbalanced and to address this, we will be using sampling techniques to balance the dataset. At the end of the analysis, we will choose the best combination of sampling technique and machine learning model that can predict credit card approval. The first two sampling technique that we used are both oversampling technique called Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE). The results for Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees for both oversampling techniques are shown in the tables below.
+### Balancing Data and Machine Learning Results
+
+The next step is to feed the cleaned dataset into multiple Machine Learning models to find out which model is the best suited for the dataset.
+
+The dataset is unbalanced and to address this, different sampling techniques will be used to balance the dataset. 
+
+Two oversampling techniques, Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE) will be used for the first set of analyses.
+
+
+**The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
+
 
 <p align="center">
 <image src ="https://user-images.githubusercontent.com/82583576/134831147-7a95eec3-30c8-4b99-932a-509092693c60.PNG" width="750">
 </p>
 
+ 
 **Undersampling models yielded the following results:**
 
+ 
 <p align="center">
 <image src = "https://user-images.githubusercontent.com/82583576/134831301-a482eff4-802b-4fec-979c-27827fe5ed07.PNG" width="750">
 </p>
- 
 
+ 
 **Combination Sampling using SMOTEENN provided the following results when used on the same dataset.** 
+
  
 <p align="center">
 <image src = "https://user-images.githubusercontent.com/82583576/134831403-72731c6a-38d9-42bd-952b-666641d22a40.PNG" width="750">
@@ -186,9 +199,20 @@ Now, we are ready for machine learning. The dataset is unbalanced and to address
  
  
  
-> Limitations and benefits
+**Interpreting the Machine Learning Results**
 
-From our results, we can see that RandomForest model and the SMOTE gave the best combination for predicting Credit Card Approval. However, the percision and recall for predicting "good" applicants are around 50% which is as good as a coin toss. Having percision around 50% means that if an applicant is approved to get a card by the model, the applicant is 50% likely to get a real credit card from the credit card company. And having a recall/sensitivity of 50% means that if a person already own a credit card from the credit card company, the model will have 50% chance of predicting that the applicant get a credit card from the credit card company. The reason behind the low percision and recall for approved applicants may be due to the fact that the dataset is imbalanced and hence it is more difficult for the machine learning models to predict good applicants. If more time were given to optimize this model, we would like to add more training data containing approved aplicants to strenghthen the percision and recall of approved applicants.
+ The tables above have a multitude of variables for what is deemed as "Good Apllicants" and "Bad Applicants".
+ 
+ The Bank has 2 risks to mitigate for losses from its credit card applicants:
+
+ 1. Loss by approving "bad" applicants - known as Type I error. 
+ 
+ 2. Loss by deying "good" applicants - known as Type II error.
+ 
+ From the tables above, the Random Forest method under both the Random Oversampling and SMOTE techniques yielded the best results to help achieve the banks risks mitigation goals.
+ ***NEED TO PROVIDE MORE EXPLANATIONS WITH REGARDS TO ACCURACY PRECISION RECALL F1 SCORE
+ 
+ 
 
 ## 6. Database
 
@@ -257,6 +281,9 @@ Interactive Features :
 
 ## 10. Recommendations
       ***TBA***
+ - Better qualifying questions
+ - Questions on applications must drive more detailed or focused answers
+ - Acquisition of better quality data from the credit bureau to build a more performing model
 
 
 ### GITHUB Individual Branches
