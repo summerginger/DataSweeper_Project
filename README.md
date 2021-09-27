@@ -168,16 +168,24 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 Now, we are ready for machine learning. The dataset is unbalanced and to address this, we will be using sampling techniques to balance the dataset. At the end of the analysis, we will choose the best combination of sampling technique and machine learning model that can predict credit card approval. The first two sampling technique that we used are both oversampling technique called Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE). The results for Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees for both oversampling techniques are shown in the tables below.
 
 <p align="center">
-<image src ="https://user-images.githubusercontent.com/82583576/134818021-344e8de9-c9cd-402c-8d56-a5a3f563fc9d.PNG" width="700">
+<image src ="https://user-images.githubusercontent.com/82583576/134831147-7a95eec3-30c8-4b99-932a-509092693c60.PNG" width="750">
 </p>
 
-The following tables are the results for the logistic regression model for an undersampling technique called ClusterCentroids and a combination sampling technique called SMOTEENN.
+**Undersampling models yielded the following results:**
 
 <p align="center">
-<image src = "https://user-images.githubusercontent.com/82583576/134818058-91e79553-88ac-43c3-9034-72f004c6724f.PNG" width="700">
+<image src = "https://user-images.githubusercontent.com/82583576/134831301-a482eff4-802b-4fec-979c-27827fe5ed07.PNG" width="750">
 </p>
  
 
+**Combination Sampling using SMOTEENN provided the following results when used on the same dataset.** 
+ 
+<p align="center">
+<image src = "https://user-images.githubusercontent.com/82583576/134831403-72731c6a-38d9-42bd-952b-666641d22a40.PNG" width="750">
+</p>
+ 
+ 
+ 
 > Limitations and benefits
 
 From our results, we can see that RandomForest model and the SMOTE gave the best combination for predicting Credit Card Approval. However, the percision and recall for predicting "good" applicants are around 50% which is as good as a coin toss. Having percision around 50% means that if an applicant is approved to get a card by the model, the applicant is 50% likely to get a real credit card from the credit card company. And having a recall/sensitivity of 50% means that if a person already own a credit card from the credit card company, the model will have 50% chance of predicting that the applicant get a credit card from the credit card company. The reason behind the low percision and recall for approved applicants may be due to the fact that the dataset is imbalanced and hence it is more difficult for the machine learning models to predict good applicants. If more time were given to optimize this model, we would like to add more training data containing approved aplicants to strenghthen the percision and recall of approved applicants.
