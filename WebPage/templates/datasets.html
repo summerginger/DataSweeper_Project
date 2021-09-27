@@ -29,8 +29,8 @@
   <div class="row">
     <div class="topnav" style="padding-left:200px">
     <div class="col-md-12 text-center">
-      <a class = "active" href="{{ url_for('home') }}" width="300"><b>Project </b> 
-        <a href="{{ url_for('datasets') }}"  style="color:rgb(3, 3, 27);"><b>Data Exploration</b>
+      <a  href="{{ url_for('home') }}" style="color:rgb(3, 3, 27);"" width = "300"><b>Project </b> 
+        <a class = "active" href="{{ url_for('datasets') }}"><b>Data Exploration</b>
         <a  href="{{ url_for('machineLearning') }}" style="color:rgb(3, 3, 27);"> <b>Machine Learning </b>
         <a  href="{{ url_for('livedemo') }}"  style="color:rgb(3, 3, 27);"><b> Live Demo </b>
         <a  href="{{ url_for('recommendations') }}" style="color:rgb(3, 3, 27);"> <b> Recommendations </b>
@@ -41,34 +41,34 @@
    
 <div class= "container">
   <br>
-  <br>
     <h1>The datasets are made up of a total of ...
     </h1>
     <br>
-   <img align="left" src="images/GenderDistribution.png"/>
-   <img align="middle" src="images/RealtyOwnership.png"/>
+   <img align="left" src="../images/GenderDistribution.png"/>
+   <img align="right" src="../images/RealtyOwnership.png"/>
+ 
    <br>
-   <hr>
-    <img align="down" src="images/ApplicantsOccupation.png">
-    <br>
-    <br>
-    <br>
+   <article>
+   <img align="down" src="../images/ApplicantsOccupation.png">
+  </article>
+   <br>
+
    <h1>The features of the “Good” applicants….</h1> 
    <br>
-   <img  src="images/GoodApplicantsRealtyOwnership.png"/>
+   <img  src="../images/GoodApplicantsRealtyOwnership.png"/>
    <hr>
-   <img align="center" src="images/GoodApplicantsIncomeType.png"/>
+   <img align="center" src="../images/GoodApplicantsIncomeType.png"/>
    <br>
    <br>
 
 <div>
-   <img align="center" src="images/FeatureImportanceRORF.PNG"/>
-</div>
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   <img align="center" src="../images/FeatureImportanceRORF.PNG"/>
 </div>
 <br>
-<script src="js/edit.js"></script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+
+<script src="../js/edit.js"></script>
 </body>
 
 <footer>

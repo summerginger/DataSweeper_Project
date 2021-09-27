@@ -30,11 +30,11 @@
   <div class="row">
     <div class="topnav" style="padding-left:200px">
     <div class="col-md-12 text-center">
-      <a class = "active" href="{{ url_for('home') }}" width="300"><b>Project </b> 
+      <a  href="{{ url_for('home') }}" style="color:rgb(3, 3, 27);" width="300"><b>Project </b> 
         <a href="{{ url_for('datasets') }}"  style="color:rgb(3, 3, 27);"><b>Data Exploration</b>
         <a  href="{{ url_for('machineLearning') }}" style="color:rgb(3, 3, 27);"> <b>Machine Learning </b>
         <a  href="{{ url_for('livedemo') }}"  style="color:rgb(3, 3, 27);"><b> Live Demo </b>
-        <a  href="{{ url_for('recommendations') }}" style="color:rgb(3, 3, 27);"> <b> Recommendations </b>
+        <a class = "active" href="{{ url_for('recommendations') }}" > <b> Recommendations </b>
         <a  href="{{ url_for('contact') }}"  style="color:rgb(3, 3, 27);"><b> Contact us </b></a>
   </div>
   </div>
@@ -49,7 +49,7 @@
             however, we should retain all our client’s information and continue to adapt machine learning techniques
             
             <pictures>
-                <img align="right" src="images/cashcards.png">
+                <img align="right" src="../images/cashcards.png">
             </pictures>
 
             direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing

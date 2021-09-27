@@ -30,10 +30,10 @@
       <div class="row">
         <div class="topnav" style="padding-left:200px">
         <div class="col-md-12 text-center">
-          <a class = "active" href="{{ url_for('home') }}" width="300"><b>Project </b> 
+          <a href="{{ url_for('home') }}"  style="color:rgb(3, 3, 27);" width="300"><b>Project </b> 
             <a href="{{ url_for('datasets') }}"  style="color:rgb(3, 3, 27);"><b>Data Exploration</b>
             <a  href="{{ url_for('machineLearning') }}" style="color:rgb(3, 3, 27);"> <b>Machine Learning </b>
-            <a  href="{{ url_for('livedemo') }}"  style="color:rgb(3, 3, 27);"><b> Live Demo </b>
+            <a class = "active" href="{{ url_for('livedemo') }}" ><b> Live Demo </b>
             <a  href="{{ url_for('recommendations') }}" style="color:rgb(3, 3, 27);"> <b> Recommendations </b>
             <a  href="{{ url_for('contact') }}"  style="color:rgb(3, 3, 27);"><b> Contact us </b></a>
       </div>
@@ -45,7 +45,7 @@
             <div class="container-fluid">
                 <div class="panel panel-primary">
                <div class="panel-heading">
-                   <h3 class="panel-title"> Enter Personal Info</h3>
+                   <h3 class="panel-title" style ="color: aliceblue;"> Enter Personal Info</h3>
                <div class="row">
                  <div class="col-md-3">
                 <form class = "bg-dark" action="/result" method = "POST">
@@ -73,15 +73,16 @@
                         </select>
                        </li>
                        <li class = "list-group-item bg-dark" >
-                        <label for="CNT_CHILDREN">Number of Children:</label>
+                        <label for="CNT_CHILDREN"> Number of Children:</label>
                         <input type="number" name="CNT_CHILDREN" id="CNT_CHILDREN" required/>
                        </li>
                        <li class="list-group-item bg-dark">
-                        <label for="AMT_INCOME_TOTAL">Annual Income:</label>
+                        <label for="AMT_INCOME_TOTAL"> Annual Income: <br></label>
                         <input type="number" name="AMT_INCOME_TOTAL" id="AMT_INCOME_TOTAL" required/>
                        </li> 
+
                        <li class="list-group-item bg-dark">
-                        <label for="NAME_INCOME_TYPE">Type of Income</label>
+                        <label for="NAME_INCOME_TYPE">Type of Income </label>
                         <select name="NAME_INCOME_TYPE" id="NAME_INCOME_TYPE" required>
                           <option value="Commercial associate">Commercial associate</option>
                           <option value="Pensioner">Pensioner</option>
@@ -90,6 +91,7 @@
                           <option value="Working">Working</option>
                         </select> 
                        </li>
+
                        <li class="list-group-item bg-dark">
                         <label for="NAME_EDUCATION_TYPE">Highest Education</label>
                         <select id="NAME_EDUCATION_TYPE" name="NAME_EDUCATION_TYPE" required>
@@ -100,6 +102,7 @@
                           <option value="Secondary / secondary special">Secondary / secondary special</option>
                         </select>
                        </li>
+
                        <li class="list-group-item bg-dark">
                         <label for="NAME_FAMILY_STATUS">Family Status</label>
                         <select id="NAME_FAMILY_STATUS" name="NAME_FAMILY_STATUS" required>
@@ -146,23 +149,26 @@
                           </select>
                        </li>
                        <li class="list-group-item bg-dark">
-                        <p>Family Members <input type="number" name="CNT_FAM_MEMBERS" required/></p>
+                        <lable>Family Members </lable>
+                        <input type="number" name="CNT_FAM_MEMBERS" required/>
                        </li>
-                       <p>Age (in years)<input type="number" name="AGE" /></p>
+                       <li class="list-group-item bg-dark">
+                       <lable for="age"> Age (in years)</lable>
+                       <input type="number" name="AGE" />
                        </li>
+                       <li class="list-group-item bg-dark">
+                       <lable for="employment_period">Employement Period (in years)</lable> 
+                        <input type="number" name="EMPLOYMENT_PERIOD" required/>
                        </li>
-                        <p>Employement Period (in years)<input type="number" name="EMPLOYMENT_PERIOD" required/></p>
-                       </li>
-                       <br>
-                       <br>
-                       <li>
-                        <input type="submit" value="Submit">
-                       </li>     
+                       <!-- <li class="list-group-item bg-dark"> -->
+                        <b><input align = "center" type="submit" value="Submit"></b>
+                         
                    </ul>
                </form>
        </div>
-      <div class="col-md-9">
-                 <h1>Pickle demo results... </h1>
+      <div class="col-md-9" style="padding: 300px;">
+        
+                 <h1  style="color: aliceblue;">Pickle demo results... </h1>
        </div>
           </article>
         </section> 
@@ -171,7 +177,7 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </div>
 <br>
-<script src="js/edit.js"></script>
+<script src="../js/edit.js"></script>
 </body>
         <!-- <br>
         <footer>
