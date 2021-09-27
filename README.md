@@ -220,18 +220,17 @@ Interactive Features :
 - Number of children
  -Number of car
 
-> Dashboard Display[click here](https://summerginger.github.io/DataSweeper_Project/)
- 
->[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
+> Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
 
  
 ## 9. Result of the Analysis
       ***TBA***
 
-
 ## 10. Recommendations
 While there are many criteria that may disprove our customer’s credit card applications, however, we should retain all our client’s information and continue to adapt machine learning techniques to direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing business. 
-
+ 
+>[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
+ 
 ## 11. Team
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
  
