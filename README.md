@@ -1,38 +1,42 @@
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/82583576/134264658-70a9db96-b267-49f3-90f2-3c1b09e0d839.PNG" width="1000" height="100">
 </p>     
+
 
 # Credit Card Approval Prediction 
 
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
 
+>  Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/index.html)
+<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
+
 
  ## Table of Contents 
 
-- [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
+1. [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
 
-- [Topic Selection Criteria](https://github.com/summerginger/DataSweeper_Project#2-topic-selection-criteria) 
+2. [Topic Selection Criteria](https://github.com/summerginger/DataSweeper_Project#2-topic-selection-criteria) 
 
-- [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
+3. [Overview of dataset](https://github.com/summerginger/DataSweeper_Project#3-overview-of-dataset)
 
+4. [Question](https://github.com/summerginger/DataSweeper_Project#4-question-the-team-wants-to-answer-with-the-data) 
 
-        
+5. [Machine Learning](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#5--machine-learning)
 
-- [Question](https://github.com/summerginger/DataSweeper_Project#4-question-the-team-wants-to-answer-with-the-data) 
+6. [Database](https://github.com/summerginger/DataSweeper_Project#6-database)
 
-- [Database](https://github.com/summerginger/DataSweeper_Project#6-database)
+7. [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-- [Machine Learning](https://github.com/summerginger/DataSweeper_Project/blob/main/README.md#5--machine-learning)
+8. [Dashboard](https://github.com/summerginger/DataSweeper_Project#8-dashboard-description)
 
-- [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#8-result-of-the-analysis)
+9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
 
-- [Recommendations](https://github.com/summerginger/DataSweeper_Project#9-recommendations)
+10. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
 
-- [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
+11. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
 
-- [Dashboard](https://github.com/summerginger/DataSweeper_Project#9-dashboard-description)
-
-- Data Citations
+12. [Citations](https://github.com/summerginger/DataSweeper_Project#12-Citations)
 
 
 ## 1. Overview of the Project
@@ -58,6 +62,10 @@ In today's fast-paced and high-tech world, credit scores can further impact many
 
 The primary objective of this analysis is to implement the data mining techniques on a credit card applicant dataset. Data-based conclusions about probability of repayment can be derived and recommendations can be put forward.
 
+
+Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
+
+>[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
 ## 3. Overview of dataset
  
@@ -105,7 +113,7 @@ ID   | Client number |
 MONTHS_BALANCE   | Record month    |  The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on / Continuous 
 STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-89 days overdue` 3: `90-119 days overdue` 4: `120-149 days overdue` 5: `Overdue or bad debts, write-offs for more than 150 days` C: `paid off that month` X: `No loan for the month` / Categorical
  
- 
+ >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 ### Description of data source
 This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). The precision of data is over 0.5. 
 
@@ -130,8 +138,9 @@ This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approv
 
 ## 5.  Machine Learning  
 
- > Preliminary Data Preprocessing
+### Preliminary Data Preprocessing
  
+
 ### Data Cleaning and Preparation 
 
 #### Choosing "good" and "bad" applicants
@@ -164,6 +173,7 @@ Features, such as days of birth, days of employment ,'FLAG_MOBIL' ,'FLAG_WORK_PH
 
 The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of ***machine_learning.ipynb TBR***. 
 
+
 The two dataframes **new_credit** and **application_record_df** were merged to create the dataframe for the machine learning models, and export the merged dataset as a csv file from the PostgreSQL databse hosted on AWS RDS.
 
 ### Description of Machine Learning 
@@ -175,16 +185,32 @@ Hence, the machine learning models used will be based on supervised binary class
 
 The data is in a PostgreSQL database hosted on AWS RDS. The two files making up the dataset will be merged in PostgreSQL and then integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
 
+- Cleaning and encoding data
+
+The next preliminary data preprocessing we conducted was to clean, encode, and rescale data from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the gender, owning a car, owning realty, income category, education level, Marital status, housing type, and occupation columns using the .get_dummies() method. Following this, we rescaled the annual income column by dividing the whole column by 10000 and created new columns for age and employment period as they were initially counted in days and not years. We then dropped days of birth, days of employement ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and id columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models, and export the merged dataset as a csv file for us to import to the PostgreSQL databse.
+
+- Description of Machine Learning 
+
+The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
+
+- Connecting machine learning model with databse
+
+But before we start our machine learning process, we must first import the dataset from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+
+
 These libraries are:
 - ipython-sql
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
  
- > Feature Selection and Splitting Data
+>[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
+
+ ### Feature Selection and Splitting Data
  
 All the columns, except for the column "STATUS_y" from the pre-processed dataset were used as features to build the models. The target variable was determined to be "STATUS_y". 
 The dataset was split into training and testing sets, 75% training and 25% testing. 
 The data was scaled using StandardScaler() for the features of the training and testing sets. 
+
 
 ***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.TBR*** 
 
@@ -199,6 +225,10 @@ The dataset is unbalanced and to address this, different sampling techniques wil
 Two oversampling techniques, Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE) will be used for the first set of analyses.
 
 
+The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**. 
+
+- Balancing Data and Machine learning Results
+
 **The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
 
 
@@ -206,8 +236,11 @@ Two oversampling techniques, Random Oversampling and Synthetic Minority Oversamp
 <image src ="https://user-images.githubusercontent.com/82583576/134831147-7a95eec3-30c8-4b99-932a-509092693c60.PNG" width="750">
 </p>
 
+
  
 **Undersampling models yielded the following results:**
+
+### Limitations and benefits
 
  
 <p align="center">
@@ -239,6 +272,8 @@ Two oversampling techniques, Random Oversampling and Synthetic Minority Oversamp
  
  
 
+>[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
+
 ## 6. Database
 
 The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
@@ -252,8 +287,8 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 <image src="https://user-images.githubusercontent.com/82583576/132156481-105fea27-3ee5-4101-9a4b-e21047c3fdbc.png" width="600">
 
 </p>
-
  
+ >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
  
  ## 7. Technologies
 
@@ -287,8 +322,8 @@ Flask and Pickle have also been used to demonstrate the interactivity of the mod
 The dashboard is hosted on GitHub Pages.
  
 ## 8. Dashboard Description
- 
-Tools: JavaScript, HTML, D3.Js
+
+Tools: JavaScript, HTML
  
 Interactive Features : 
  
@@ -296,22 +331,31 @@ Interactive Features :
 - Education
 - Occupation
 - Net income
-- Number of family members
+- Number of children
+ -Number of car
 
-> Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/)
+> Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
+
  
 ## 9. Result of the Analysis
       ***TBA***
 
-
 ## 10. Recommendations
-      ***TBA***
+
+  ***TBA***
  - Better qualifying questions
  - Questions on applications must drive more detailed or focused answers
  - Acquisition of better quality data from the credit bureau to build a more performing model
 
 
 ### GITHUB Individual Branches
+
+While there are many criteria that may disprove our customer’s credit card applications, however, we should retain all our client’s information and continue to adapt machine learning techniques to direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing business. 
+ 
+>[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
+ 
+## 11. Team
+
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
  
 - Binoy Luckoo's Branch Name:  Binoy_DeliverableN 
@@ -319,12 +363,13 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 - Jane Huang's Branch Name: jane_DeliverableN
 - Lucas Chandra's Branch Name: lucas_DeliverableN
 
-
-## Resources
+## 12. Citations
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
- 
+
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png" width="600" height="300">
 </p>
+
+>[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
