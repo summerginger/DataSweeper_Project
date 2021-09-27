@@ -8,7 +8,7 @@
 
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
 
->  Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/index.html)
+>  Dashboard [click here](https://github.com/summerginger/DataSweeper_Project/blob/main/index.html)
 <img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
 
 
