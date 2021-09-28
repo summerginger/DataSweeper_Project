@@ -45,24 +45,23 @@ The objective of this project is to help a financial institution to decide wheth
 
 The decision of approving a credit card is mainly dependent on the personal and financial background of  the applicant. Factors like, age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
-Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to loss involved in the transaction. 
+Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to losses involved in the transaction. 
 
 There are two basic risks: 
 
-- Business loss that results from not approving the good candidate
+- Opportunity loss that results from not approving the good candidate
 - Financial loss that results from by approving a non-credit worthy candidate. 
  
-It is very important to manage credit risk and handle challenges efficiently for credit decision as it can have adverse effects on credit management. 
+It is very important to manage credit risks and handle challenges efficiently for credit decision as it can have adverse effects on credit management. 
 
 
 ## 2. Topic Selection Criteria
 
 In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
 
-The primary objective of this analysis is to implement the data mining techniques on a credit card applicant dataset. Data-based conclusions about probability of repayment can be derived and recommendations can be put forward.
+The primary objective of this analysis is to design a Machine Learning model a credit card applicant dataset. 
 
-
-Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution can choose which model to use.
+Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution.
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
@@ -70,9 +69,11 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
  
 ### The Dataset contains two files:
 
-1. **Demographics & application data - "application_record.csv"**
+**- Demographics & application data - "application_record.csv"**
 
-  This data has been provided by the applicants at the time of the credit card application. It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
+This data has been provided by the applicants at the time of the credit card application. 
+
+It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
  
 |application_record.csv |||
 | ------------- |-------------| -----|
@@ -99,7 +100,7 @@ Datasets will be cleaned and analysed so that they can be used in multiple machi
 
 ##
 
-2. **Credit Bureau data - "credit_record.csv"** 
+**- Credit Bureau data - "credit_record.csv"** 
    
    Data obtained from the credit bureau showing payment experience and the date of the last data extraction.  
    
@@ -113,8 +114,10 @@ MONTHS_BALANCE   | Record month    |  The month of the extracted data is the sta
 STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-89 days overdue` 3: `90-119 days overdue` 4: `120-149 days overdue` 5: `Overdue or bad debts, write-offs for more than 150 days` C: `paid off that month` X: `No loan for the month` / Categorical
  
  >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
+
 ### Description of data source
-This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). The precision of data is over 0.5. 
+
+This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
 
  The binary features including the following: 
 - Gender
