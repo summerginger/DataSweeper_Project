@@ -17,6 +17,10 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
 .panel > .panel-heading {
@@ -112,3 +116,22 @@ a:hover, a:active {
   background-color: #9ea6beda;
   color: whitesmoke;
 }
+/* datasetpage */
+.container{
+  max-width: 900px;
+  margin: auto;
+  overflow: auto;
+  }
+  .gallery{
+    margin: 50px;
+    /* border: 1px solid #ccc; */
+    float: center;
+  }
+  .gallery img{
+    width: 100%;
+    height: auto;
+  }
+  .desc{
+    text-align: center;
+    font-size: 30px;
+  }

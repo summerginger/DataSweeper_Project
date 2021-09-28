@@ -29,7 +29,7 @@
     <div class="row">
     <div class="topnav" style="padding-left:200px">
     <div class="col-md-12 text-center">
-      <a  href="index.html" width="300"><b>Project </b> 
+      <a  href="index.html"  style="color:rgb(3, 3, 27);"><b>Project </b> 
         <a href="datasets.html"  style="color:rgb(3, 3, 27);"><b>Data Exploration</b>
         <a class = "active" href="ML.html"><b>Machine Learning </b>
         <a  href="livedemo.html"  style="color:rgb(3, 3, 27);"><b> Live Demo </b>
@@ -39,19 +39,57 @@
     </div>
   </div>
       
-    <div class= "container-center">
-        <h2> Random Oversampling Model <hr></h2> 
-           <img align="left" src = "images/CReportRORF.jpg" />
-           <img align="right" src = "images/RdmOverSRdmForCM.png"/ >
+  <style> 
+    *{
+      box-sizing: border-box;
+    }
+    .container{
+    max-width: 2800px;
+    margin: auto;
+    overflow: auto;
+    }
+    .gallery{
+      margin: 30px;
+      /* border: 1px solid #ccc; */
+      float: left;
+      width: 700px;
+    }
+    /* .gallery img{
+      width: 100%;
+      height: 350px;
+    } */
+    .desc{
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+      color: whitesmoke;
+    }
+    </style>
+        <div class= "container">
+          <wrapper div>
+            <div class="desc"> <br><b>RANDOM OVERSAMPLING Random Forest </b> <hr>
+            </div> 
+            <div align="right" class="gallery">
+              <img style="width: 500px;" src="images/RdmOSRFCM26.png"/>
+             </div>
+          <div align= "right" class="gallery" >
+            <img style="width: 800px; height: 400px; padding: 50px;" src="images/RORFClassRepSep26.PNG"/> 
+          </div>
+          </wrapper>
+           
+        <wrapper div>
+          <div class="desc"><br><b>SMOTE  OVERSAMPLING Random Forest </b> <hr> </div>    
+          <div align="right" class="gallery">
+          <img style="width: 500px;" src="images/SOSRFCM26.png"/>
+          </div>
+          <div class="gallery">
+            <img style="width: 800px; height: 400px; padding: 50px;" src="images/ROSRFClassRepSep26.PNG"/>
+          </div>
+        </wrapper>
         </div>
-        <article> 
-        <h2> Smote Oversampling Model <hr> </h2>
-        <img align="left" src = "images/CReportSMORF.PNG" />    
-        <img align="right" src = "images/SOSRFCM.png"/ >
-        </article>
-    </div>
     
-    <!-- <div>
+  </body>
+  <div>
       <footer>
       <h1 style="color:  black; font-size: xx-large;" > 
         <i class='bx bx-mail-send' ></i>
@@ -62,7 +100,5 @@
       <a style="color:rgb(3, 3, 27);" href="mailto:jane@mailinator.com"> <b>Jane</b></a>
       <a style="color:rgb(3, 3, 27);" href="mailto:lucas@mailinator.com"> <b>Lucas <b></b></a>
     </footer>
-    </div> -->
-  </body>
-  
+    </div>
 </html>
