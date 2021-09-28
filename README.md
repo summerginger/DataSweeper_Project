@@ -328,8 +328,7 @@ The dashboard is hosted on GitHub Pages.
  - Expand the population size of the datasets
  - Market other product types, i.e. prepaid credit cards, to "denied" applicants 
 
-While there are many criteria that may disprove our customer’s credit card applications, however, we should retain all our client’s information and continue to adapt machine learning techniques to direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing business. 
- 
+
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
  
 ## 10. Team
