@@ -134,25 +134,26 @@ The datasets include a mix of binary, categorical and continuous features.
 
 ## 5.  Machine Learning  
 
-### Preliminary Data Preprocessing
+## Preliminary Data Preprocessing
  
 
 ### Data Cleaning and Preparation 
 
 #### Choosing "good" and "bad" applicants
 
-Preliminary data preprocessing must be completed before any analysis and/or machine learning models can be used on the dataset. 
+Preliminary data pre-processing must be completed before any analysis and/or machine learning models can be used on the dataset. 
 
 The following steps were undertaken to pre-process the datasets provided by the bank:
 
-**1. Determine "good" and "bad" applicants in the **credit_records.csv** file** 
+**- Determine "good" and "bad" applicants in the ***credit_records.csv*** file** 
 
-As illustrated in the **Overview of Dataset**, the **credit_record.csv** contains information of all the applicants and their payment experience. 
+As illustrated in the **Overview of Dataset**, the ***credit_record.csv*** contains information of all the applicants and their payment experience. 
 The status of payment of the card holder's credit account from the starting month of their credit account until the current month is provided. 
 From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), credit card accounts are closed and sold to a collection agency when an account has not received payment for 3 or more months. 
 
-With this added information came the idea of how to determine how an applicant is "good" or "bad" for credit card companies. 
-Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit - TBR*** and the process of the preliminary data preprocessing steps above are demonstrated in cells 20 to 26 of ***machine_learning.ipynb TBR***. 
+With this added information, determining how an applicant is deemed "good" or "bad" for credit card companies. 
+
+Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit*** and the process of the preliminary data pre-processing steps above are demonstrated in cells 20 to 26 of ***machine_learning.ipynb TBR***. 
 
 **2. Cleaning and encoding data** ***May need to change this section as we made some changes as to how and where the dataset was cleaned and merged, i.e. in PostGres vs Python DF**
 
