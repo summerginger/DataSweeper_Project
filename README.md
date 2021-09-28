@@ -153,9 +153,9 @@ From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-
 
 With this added information, determining how an applicant is deemed "good" or "bad" for credit card companies. 
 
-Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit*** and the process of the preliminary data pre-processing steps above are demonstrated in cells 20 to 26 of ***machine_learning.ipynb TBR***. 
+Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit*** and the process of the preliminary data pre-processing steps above are demonstrated in cells 20 to 26 of ***../machine_learning/cleaning_and_preprocessing_data.ipynb***. 
 
-**2. Cleaning and encoding data** ***May need to change this section as we made some changes as to how and where the dataset was cleaned and merged, i.e. in PostGres vs Python DF**
+**- Cleaning and encoding data** ***May need to change this section as we made some changes as to how and where the dataset was cleaned and merged, i.e. in PostGres vs Python DF**
 
 The next preliminary data preprocessing was to clean, encode, and rescale data from the **application_record.csv** file.
 
@@ -166,14 +166,14 @@ Further encoding of gender, car ownership, owning realty, income category, educa
 
 The annual income column was re-scaled by dividing the whole column by 10000 and new columns for age and employment period were created as they were initially counted in days and not years.
 
-Features, such as days of birth, days of employment ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
+Features, such as 'days of birth', 'days of employment' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
 
 The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of ***machine_learning.ipynb TBR***. 
 
 
 The two dataframes **new_credit** and **application_record_df** were merged to create the dataframe for the machine learning models, and export the merged dataset as a csv file from the PostgreSQL databse hosted on AWS RDS.
 
-### Description of Machine Learning 
+### Target Variable
 
 The target variable ("STATUS_y") for this dataset is binary, i.e. approve (1) or not approve (0).
 Hence, the machine learning models used will be based on supervised binary classification models.  Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
@@ -181,19 +181,6 @@ Hence, the machine learning models used will be based on supervised binary class
 ### Connecting the Database to the Machine Learning Models
 
 The data is in a PostgreSQL database hosted on AWS RDS. The two files making up the dataset will be merged in PostgreSQL and then integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
-
-- Cleaning and encoding data
-
-The next preliminary data preprocessing we conducted was to clean, encode, and rescale data from the **application_record.csv** file. After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicates of records and filling in null values. We successfully removed duplicated records using the .drop_duplicates() method and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". We then continued to encode the gender, owning a car, owning realty, income category, education level, Marital status, housing type, and occupation columns using the .get_dummies() method. Following this, we rescaled the annual income column by dividing the whole column by 10000 and created new columns for age and employment period as they were initially counted in days and not years. We then dropped days of birth, days of employement ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' , and id columns as they are not important features for predicting whether an applicant pays their credit bills or not. The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of **machine_learning.ipynb**. We then merged the two dataframes **new_credit** and **application_record_df** to create the dataframe for the machine learning models, and export the merged dataset as a csv file for us to import to the PostgreSQL databse.
-
-- Description of Machine Learning 
-
-The machine learning models used in this dataset will be based on supervised binary classification models. This is because the target variable ("STATUS_y") for this dataset is a binary outcome, i.e. approve (1) or not approve (0). Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
-
-- Connecting machine learning model with databse
-
-Prior to starting the machine learning process, the dataset must first be imported from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
-
 
 These libraries are:
 - ipython-sql
@@ -206,6 +193,7 @@ These libraries are:
  
 All the columns, except for the column "STATUS_y" from the pre-processed dataset were used as features to build the models. The target variable was determined to be "STATUS_y". 
 The dataset was split into training and testing sets, 75% training and 25% testing. 
+
 The data was scaled using StandardScaler() for the features of the training and testing sets. 
 
 
