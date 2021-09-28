@@ -346,9 +346,6 @@ Interactive Features :
  - Questions on applications must drive more detailed or focused answers
  - Acquisition of better quality data from the credit bureau to build a more performing model
 
-
-### GITHUB Individual Branches
-
 While there are many criteria that may disprove our customer’s credit card applications, however, we should retain all our client’s information and continue to adapt machine learning techniques to direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing business. 
  
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
