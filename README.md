@@ -189,7 +189,7 @@ These libraries are:
 - SQLALCHEMY
 - A python database API (DBAPI) library (i.e. psycopg2)
 
-This process is shown in cells 3-7 of **machine_learning_new.ipynb**
+This process is shown in cells 3-7 of **machine_learning_new.ipynb**.
  
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
@@ -199,10 +199,8 @@ All the columns, except for the column "STATUS_y" from the pre-processed dataset
 The dataset was split into training and testing sets, 75% training and 25% testing. 
 The data was scaled using StandardScaler() for the features of the training and testing sets. 
 
+This process is demonstrated in cells 12-17 of **machine_learning_new.ipynb**.
 
-***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.TBR*** 
-
- >  Preliminary feature engineering and preliminary feature selection, including decision-making process
    
 ### Balancing Data and Machine Learning Results
 
@@ -213,9 +211,8 @@ The dataset is unbalanced and to address this, different sampling techniques wil
 Two oversampling techniques, Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE) will be used for the first set of analyses.
 
 
-The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**. 
+The process above is demonstrated in cells 22-44 of **machine_learning_new.ipynb**. 
 
-- Balancing Data and Machine learning Results
 
 **The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
 
