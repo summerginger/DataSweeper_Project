@@ -27,21 +27,19 @@
 
 7. [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-8. [Dashboard](https://github.com/summerginger/DataSweeper_Project#8-dashboard-description)
+8. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
 
-9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
+9. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
 
-10. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
+10. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
 
-11. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
-
-12. [Citations](https://github.com/summerginger/DataSweeper_Project#12-Citations)
+11. [Citations](https://github.com/summerginger/DataSweeper_Project#12-Citations)
 
 
 ## 1. Overview of the Project
 
 
-The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
+The objective of this project is to help a financial institution decide whether to issue a credit card to an applicant. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
 
 The decision of approving a credit card is mainly dependent on the personal and financial background of  the applicant. Factors like, age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
@@ -59,9 +57,11 @@ It is very important to manage credit risks and handle challenges efficiently fo
 
 In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
 
-The primary objective of this analysis is to design a Machine Learning model a credit card applicant dataset. 
+The primary objective of this analysis is to design a Machine Learning model to be used on a credit card applicant dataset. 
 
-Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. Following the results and information derived from the different models, recommendations will be provided so the financial institution.
+Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. 
+
+Following the results and information derived from the different models, recommendations will be provided so the financial institution.
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
@@ -100,9 +100,9 @@ It contains demographic information including gender, car & real estate ownershi
 
 ##
 
-**- Credit Bureau data - "credit_record.csv"** 
+**- Payment History data - "credit_record.csv"** 
    
-   Data obtained from the credit bureau showing payment experience and the date of the last data extraction.  
+   Data showing payment experience and the date of the last data extraction.  
    
 
 
@@ -119,13 +119,7 @@ STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-8
 
 This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
 
- The binary features including the following: 
-- Gender
-- Having a car or not
-- Having house reality or not
-- Having a phone or not
-- Having an email or not
-- Having a Work Phone or not
+The datasets include a mix of binary, categorical and continuous features.
 
 
 ## 4. Question the team wants to answer with the data
@@ -134,7 +128,7 @@ This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approv
 
 2. Can the model minimize the following risks? 
 
-- Loss from not approving the good applicant
+- Opportunity Loss from not approving the good applicant
 - Loss resulting from approving a non-credit worthy candidate
 
 
@@ -242,9 +236,6 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
  
 **Undersampling models yielded the following results:**
 
-### Limitations and benefits
-
- 
 <p align="center">
 <image src = "https://user-images.githubusercontent.com/82583576/135096930-e080d8d9-71a4-4fd6-b9ec-639f8762f559.PNG" width="750">
 </p>
@@ -323,28 +314,14 @@ Flask and Pickle have also been used to demonstrate the interactivity of the mod
  
 The dashboard is hosted on GitHub Pages.
  
-## 8. Dashboard Description
-
-Tools: JavaScript, HTML
- 
-Interactive Features : 
- 
-- Age
-- Education
-- Occupation
-- Net income
-- Number of children
- -Number of car
-
 > Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
 
  
-## 9. Result of the Analysis
+## 8. Result of the Analysis
       ***TBA***
 
-## 10. Recommendations
-
-  ***TBA***
+## 9. Recommendations
+ 
  - Better qualifying questions
  - Questions on applications must drive more detailed or focused answers
  - Acquisition of better quality data from the credit bureau to build a more performing model
@@ -353,7 +330,7 @@ While there are many criteria that may disprove our customer’s credit card app
  
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
  
-## 11. Team
+## 10. Team
 
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
  
@@ -362,7 +339,7 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 - Jane Huang's Branch Name: jane_DeliverableN
 - Lucas Chandra's Branch Name: lucas_DeliverableN
 
-## 12. Citations
+## 11. Citations
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
