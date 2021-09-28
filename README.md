@@ -322,9 +322,11 @@ The dashboard is hosted on GitHub Pages.
 
 ## 9. Recommendations
  
- - Better qualifying questions
- - Questions on applications must drive more detailed or focused answers
- - Acquisition of better quality data from the credit bureau to build a more performing model
+ - Use a live database to feed the model 
+ - Collect more detailed and focused information from applicants
+ - Include updated credit bureau information in the datasets
+ - Expand the population size of the datasets
+ - Market other product types, i.e. prepaid credit cards, to "denied" applicants 
 
 While there are many criteria that may disprove our customer’s credit card applications, however, we should retain all our client’s information and continue to adapt machine learning techniques to direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing business. 
  
