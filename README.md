@@ -139,7 +139,7 @@ The datasets include a mix of binary, categorical and continuous features.
 
 ### Data Cleaning and Preparation 
 
-#### Choosing "good" and "bad" applicants
+#### - Choosing "good" and "bad" applicants
 
 Preliminary data pre-processing must be completed before any analysis and/or machine learning models can be used on the dataset. 
 
