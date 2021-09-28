@@ -314,12 +314,12 @@ The dashboard is hosted on GitHub Pages.
 
 ## 9. Recommendations
 
- - Use a live database to feed the model 
- - Collect more detailed and focused information from applicants
- - Include updated credit bureau information in the datasets
- - Expand the population size of the datasets
- - Market other product types, i.e. prepaid credit cards, to "denied" applicants 
-
+- Use the SMOTE Oversampling Random Forest for the decision making process
+- Use a live database to feed the model
+- Collect more detailed and focused information from applicants
+- Include updated credit bureau information in the datasets
+- Expand the population size of the datasets
+- Market other product types, i.e. prepaid credit cards, to "denied" applicants
  
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
  
