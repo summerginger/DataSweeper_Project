@@ -27,21 +27,19 @@
 
 7. [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-8. [Dashboard](https://github.com/summerginger/DataSweeper_Project#8-dashboard-description)
+8. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
 
-9. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
+9. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
 
-10. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
+10. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
 
-11. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
-
-12. [Citations](https://github.com/summerginger/DataSweeper_Project#12-Citations)
+11. [Citations](https://github.com/summerginger/DataSweeper_Project#12-Citations)
 
 
 ## 1. Overview of the Project
 
 
-The objective of this project is to help a financial institution to decide whether to issue a credit card to an applicant. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
+The objective of this project is to help a financial institution decide whether to issue a credit card to an applicant. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
 
 The decision of approving a credit card is mainly dependent on the personal and financial background of  the applicant. Factors like, age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
@@ -49,7 +47,7 @@ Credit analysis focus on recognizing, assessing and reducing the financial or ot
 
 There are two basic risks: 
 
-- Business loss that results from not approving the good candidate
+- Opportunity loss that results from not approving the good candidate
 - Financial loss that results from by approving a non-credit worthy candidate. 
  
 It is very important to manage credit risk and handle challenges efficiently for credit decision as it can have adverse effects on credit management. 
@@ -320,40 +318,24 @@ Flask and Pickle have also been used to demonstrate the interactivity of the mod
  
 The dashboard is hosted on GitHub Pages.
  
-## 8. Dashboard Description
-
-Tools: JavaScript, HTML
- 
-Interactive Features : 
- 
-- Age
-- Education
-- Occupation
-- Net income
-- Number of children
- -Number of car
-
 > Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
 
  
-## 9. Result of the Analysis
+## 8. Result of the Analysis
       ***TBA***
 
-## 10. Recommendations
+## 9. Recommendations
 
-  ***TBA***
- - Better qualifying questions
- - Questions on applications must drive more detailed or focused answers
- - Acquisition of better quality data from the credit bureau to build a more performing model
+ - Use a live database to feed the model 
+ - Collect more detailed and focused information from applicants
+ - Include updated credit bureau information in the datasets
+ - Expand the population size of the datasets
+ - Market other product types, i.e. prepaid credit cards, to "denied" applicants 
 
-
-### GITHUB Individual Branches
-
-While there are many criteria that may disprove our customer’s credit card applications, however, we should retain all our client’s information and continue to adapt machine learning techniques to direct them to have other cards, such as cash cards, points reward cards etc. for the benefit of the growing business. 
  
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
  
-## 11. Team
+## 10. Team
 
 Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
  
@@ -362,7 +344,7 @@ Each team member's brnch has been named as follows: "First_name_DeliverableN", w
 - Jane Huang's Branch Name: jane_DeliverableN
 - Lucas Chandra's Branch Name: lucas_DeliverableN
 
-## 12. Citations
+## 11. Citations
 * [Kaggle Link](https://www.kaggle.com/rikdifos/credit-card-approval-prediction/code)
 
 * [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
