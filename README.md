@@ -243,7 +243,7 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 
  
 <p align="center">
-<image src = "https://user-images.githubusercontent.com/82583576/134831301-a482eff4-802b-4fec-979c-27827fe5ed07.PNG" width="750">
+<image src = "https://user-images.githubusercontent.com/82583576/135096930-e080d8d9-71a4-4fd6-b9ec-639f8762f559.PNG" width="750">
 </p>
 
  
