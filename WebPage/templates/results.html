@@ -39,13 +39,17 @@
       </div>
       </div>
     </div>
-    
-    {% if predictions == 0 %}
-    <p>You are rejected my model, please try again</p>
-    {% else %}
-    <p>You are approved by the model! Congratulations :D</p>
-    {% endif %}
-     
+    <div class="text-center" style="padding: 100px; color:whitesmoke;">
+      {% if predictions == 0 %}
+        <h3><strong>Sorry, your application has been denied. Please contact our agents</strong></h3>
+        <br>
+        <img src="../static/images/Denied.PNG" alt="denied">
+      {% else %}
+        <h3><strong>You are approved! Congratulations <i class='bx bx-wink-smile'></i></strong></h3>
+        <br>
+        <img src="../static/images/Approved.PNG" alt="approved">
+      {% endif %}
+    </div>
 </body>
 
 </html>
