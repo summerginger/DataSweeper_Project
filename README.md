@@ -27,7 +27,7 @@
 
 7. [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-8. [Result of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Result-of-the-Analysis)
+8. [Results of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Results-of-the-Analysis)
 
 9. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
 
@@ -225,43 +225,7 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 
 - Balancing Data and Machine learning Results
 
-**The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
 
-
-<p align="center">
-<image src ="https://user-images.githubusercontent.com/82583576/134831147-7a95eec3-30c8-4b99-932a-509092693c60.PNG" width="750">
-</p>
-
-
- 
-**Undersampling models yielded the following results:**
-
-<p align="center">
-<image src = "https://user-images.githubusercontent.com/82583576/135096930-e080d8d9-71a4-4fd6-b9ec-639f8762f559.PNG" width="750">
-</p>
-
- 
-**Combination Sampling using SMOTEENN provided the following results when used on the same dataset.** 
-
- 
-<p align="center">
-<image src = "https://user-images.githubusercontent.com/82583576/134831403-72731c6a-38d9-42bd-952b-666641d22a40.PNG" width="750">
-</p>
- 
- 
- 
-**Interpreting the Machine Learning Results**
-
- The tables above have a multitude of variables for what is deemed as "Good Apllicants" and "Bad Applicants".
- 
- The Bank has 2 risks to mitigate for losses from its credit card applicants:
-
- 1. Loss by approving "bad" applicants - known as Type I error. 
- 
- 2. Loss by deying "good" applicants - known as Type II error.
- 
- From the tables above, the Random Forest method under both the Random Oversampling and SMOTE techniques yielded the best results to help achieve the banks risks mitigation goals.
- ***NEED TO PROVIDE MORE EXPLANATIONS WITH REGARDS TO ACCURACY PRECISION RECALL F1 SCORE
  
  
 
@@ -269,9 +233,11 @@ The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.
 
 ## 6. Database
 
-The database for this project is a PostgreSQL database. The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
+The database for this project is a PostgreSQL database hosted in AWS RDS. 
 
-The machine learning model will be connected as shown in the demo.ipynb file from the **machine_learning** folder.
+The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
+
+The machine learning model is connected as shown in the demo.ipynb file from the **machine_learning** folder.
 
 The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
 
@@ -317,11 +283,54 @@ The dashboard is hosted on GitHub Pages.
 > Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
 
  
-## 8. Result of the Analysis
-      ***TBA***
+## 8. Results of the Analysis
+     
+ **The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
+
+
+<p align="center">
+<image src ="https://user-images.githubusercontent.com/82583576/134831147-7a95eec3-30c8-4b99-932a-509092693c60.PNG" width="750">
+</p>
+
+
+ 
+**Undersampling models yielded the following results:**
+
+<p align="center">
+<image src = "https://user-images.githubusercontent.com/82583576/135096930-e080d8d9-71a4-4fd6-b9ec-639f8762f559.PNG" width="750">
+</p>
+
+ 
+**Combination Sampling using SMOTEENN provided the following results when used on the same dataset.** 
+
+ 
+<p align="center">
+<image src = "https://user-images.githubusercontent.com/82583576/134831403-72731c6a-38d9-42bd-952b-666641d22a40.PNG" width="750">
+</p>
+ 
+##
+ 
+**Interpreting the Machine Learning Results**
+
+ The tables above have a multitude of variables for what is deemed as "Good Applicants" and "Bad Applicants".
+ 
+ The Bank has 2 risks to mitigate for losses from its credit card applicants:
+
+ 1. Loss by approving "bad" applicants - known as Type I error. 
+ 
+ 2. Opportunity Loss by denying "good" applicants - known as Type II error.
+ 
+ From the tables above, the Random Forest method under both the Random Oversampling and SMOTE techniques yielded the best results to help achieve the bank's risks mitigation goals.
+ 
+ - The least probability of Type I error is from the SMOTE Oversampling Random Forest model (12.06%) with the Type II error being at 10.71%. 
+   This model also yielded the best combination of Precision, accuracy and F1-Score.
+   
+   These results mean that the above-named model provides a relatively accurate prediction based on the features provided in the model in deciding whether an applicant should be approved or not.
+  
 
 ## 9. Recommendations
  
+ - Use the SMOTE Oversampling Random Forest for the decision making process
  - Use a live database to feed the model 
  - Collect more detailed and focused information from applicants
  - Include updated credit bureau information in the datasets
