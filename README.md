@@ -39,13 +39,13 @@
 ## 1. Overview of the Project
 
 
-The objective of this project is to help a financial institution decide whether to issue a credit card to an applicant. Using personal information and data submitted by credit card applicants, the model will predict the probability of future defaults and credit card borrowings.
+The objective of this project is to assist a financial institution in its decision to approve or deny credit card applications. A model will be built to predict the probability of future defaults using personal information and data submitted by applicants.
 
-The decision of approving a credit card is mainly dependent on the personal and financial background of  the applicant. Factors like, age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
+The decision to approve a credit card application is mainly dependent on the personal and financial background of  the applicant. Factors such as age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
-Credit analysis focus on recognizing, assessing and reducing the financial or other risks that could lead to losses involved in the transaction. 
+Credit analysis will focus on recognizing, assessing and reducing the financial or other risks that could lead to losses for the bank.
 
-There are two basic risks: 
+There are two basic risk factors: 
 
 - Opportunity loss that results from not approving the good candidate
 - Financial loss that results from by approving a non-credit worthy candidate. 
@@ -55,13 +55,13 @@ It is very important to manage credit risks and handle challenges efficiently fo
 
 ## 2. Topic Selection Criteria
 
-In today's fast-paced and high-tech world, credit scores can further impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their creditworthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
+In today's fast-paced and high-tech world, credit scores can often impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their credit-worthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
 
 The primary objective of this analysis is to design a Machine Learning model to be used on a credit card applicant dataset. 
 
 Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. 
 
-Following the results and information derived from the different models, recommendations will be provided so the financial institution.
+Following the results and information derived from the different models, recommendations will be provided so the financial institution can make better informed decisions.
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
@@ -71,9 +71,9 @@ Following the results and information derived from the different models, recomme
 
 **- Demographics & application data - "application_record.csv"**
 
-This data has been provided by the applicants at the time of the credit card application. 
+This data is provided by the applicants at the time of the credit card application. 
 
-It contains demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
+It contains soci-economic and demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
  
 |application_record.csv |||
 | ------------- |-------------| -----|
@@ -117,7 +117,7 @@ STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-8
 
 ### Description of data source
 
-This dataset is from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), we have selected the highest number of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
+This dataset, from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), has been selected for its high ratings of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
 
 The datasets include a mix of binary, categorical and continuous features.
 
@@ -147,12 +147,12 @@ The following steps were undertaken to pre-process the datasets provided by the 
 
 **1. Determine "good" and "bad" applicants in the **credit_records.csv** file** 
 
-As illustrated in the **Overview of Dataset**, the **credit_record.csv** contains the information of all the applicants and their payment experience. 
+As illustrated in the **Overview of Dataset**, the **credit_record.csv** contains information of all the applicants and their payment experience. 
 The status of payment of the card holder's credit account from the starting month of their credit account until the current month is provided. 
-From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), credit card accounts are closed and sold to a collection agency when an account has not recieved payment for 3 or more months. 
+From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), credit card accounts are closed and sold to a collection agency when an account has not received payment for 3 or more months. 
 
 With this added information came the idea of how to determine how an applicant is "good" or "bad" for credit card companies. 
-Applicants with 3 or more late payements (i.e. 3 times or more of "STATUS" of any 0-5) were classified be "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants in under the name ***new_credit - TBR*** and the process of the preliminary data preprocessing steps above are demonstrated in cells 20 to 26 of ***machine_learning.ipynb TBR***. 
+Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit - TBR*** and the process of the preliminary data preprocessing steps above are demonstrated in cells 20 to 26 of ***machine_learning.ipynb TBR***. 
 
 **2. Cleaning and encoding data** ***May need to change this section as we made some changes as to how and where the dataset was cleaned and merged, i.e. in PostGres vs Python DF**
 
@@ -161,7 +161,7 @@ The next preliminary data preprocessing was to clean, encode, and rescale data f
 After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicate records and filling in null values. 
 The .drop_duplicates() method was used to remove duplicates and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". 
 
-Further encoding of gender, owning a car, owning realty, income category, education level, Marital status, housing type, and occupation columns was done.
+Further encoding of gender, car ownership, owning realty, income category, education level, marital status, housing type, and occupation columns was done.
 
 The annual income column was re-scaled by dividing the whole column by 10000 and new columns for age and employment period were created as they were initially counted in days and not years.
 
@@ -191,7 +191,7 @@ The machine learning models used in this dataset will be based on supervised bin
 
 - Connecting machine learning model with databse
 
-But before we start our machine learning process, we must first import the dataset from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+Prior to starting the machine learning process, the dataset must first be imported from the database. For this, a PostgreSQL database will be created and integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
 
 
 These libraries are:
@@ -273,9 +273,9 @@ Seaborn SNS is the library used to create graphics for the Confusion Matrices.
 Matplotlib is used for all other charts within the project.
  
 **Presentation and Dashboard**
-Google Slides have been used to walk the client through the methodologies used, the findings from the data set amd commentaries about how the machine learning model will help the bank with its credit card application approval process.
+Google Slides have been used to walk the client through the methodologies used, the findings from the data set and commentaries about how the machine learning model will help the bank with its credit card application approval process.
  
-A dashboard using JavaScript, HTML and CSS have been used for a live demonstration of the project's findings.
+A dashboard using JavaScript, HTML and CSS has been used for a live demonstration of the project's findings.
 Flask and Pickle have also been used to demonstrate the interactivity of the model. The Pickle module has been used to enable applicants to input data in the model and have an instantaneous reply with regards to the application's status.
  
 The dashboard is hosted on GitHub Pages.
@@ -325,7 +325,7 @@ The dashboard is hosted on GitHub Pages.
  - The least probability of Type I error is from the SMOTE Oversampling Random Forest model (12.06%) with the Type II error being at 10.71%. 
    This model also yielded the best combination of Precision, accuracy and F1-Score.
    
-   These results mean that the above-named model provides a relatively accurate prediction based on the features provided in the model in deciding whether an applicant should be approved or not.
+   These results showcase the predictive accuracy of the model which will help the bank in its decision to approve or decline ab application.
   
 
 ## 9. Recommendations
@@ -342,7 +342,7 @@ The dashboard is hosted on GitHub Pages.
  
 ## 10. Team
 
-Each team member's brnch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
+Each team member's branch has been named as follows: "First_name_DeliverableN", where N stands for the deliverable number. Example for the first deliverable, "Binoy_Deliverable1"
  
 - Binoy Luckoo's Branch Name:  Binoy_DeliverableN 
 - Samir Rifi's Branch Name:  samir_DeliverableN
