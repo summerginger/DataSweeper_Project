@@ -307,8 +307,17 @@ As illustrated above, Python in combination with multiple librairies and tools w
 - From the tables above, the Random Forest method under both the Random Oversampling and SMOTE techniques yielded the best results to help achieve the bank's risks mitigation goals.
  
   - The least probability of Type I error is from the SMOTE Oversampling Random Forest model (12.06%) with the Type II error being at 10.71%. 
-    This model also yielded the best combination of Precision, accuracy and F1-Score.
-   
+    
+  - The metrics from the Confusion Metrics, presentated in the classiffication table also indicated the following:
+ 
+    Accuracy: overall measure of how ofteh the classifer is correct
+ 
+    Precision: when the model predicts "Good" applicant, how often is it really a "Good" applicant
+ 
+    Recall: when is is actually a "Good" applicant, how often does the model predicts it is a "Good" applicant
+ 
+  - The SMOTE OVERSAMPLING Decision Tree model yields the best combination of the above metrics.
+      
     These results showcase the predictive accuracy of the model which will help the bank in its decision to approve or decline ab application.
   
 
