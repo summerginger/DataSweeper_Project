@@ -209,7 +209,7 @@ Following the results and information derived from the different models, recomme
 
 - Two oversampling techniques, Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE) will be used for the first set of analyses.
 
-  - The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**. 
+- ***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.*** 
 
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
@@ -267,9 +267,10 @@ As illustrated above, Python in combination with multiple librairies and tools w
 
  
 ## 8. Results of the Analysis
-     
-- The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.
-
+  
+- The Confusion Matrix and their relative Metrics for each analysis ***(Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree)*** for the oversampling undersampling and combination sampling techniques have been summarized in the tables below: 
+ 
+- Oversampling results: 
 
 <p align="center">
 <image src ="https://user-images.githubusercontent.com/82583576/134831147-7a95eec3-30c8-4b99-932a-509092693c60.PNG" width="750">
