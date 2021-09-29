@@ -10,6 +10,7 @@
 >  Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/index.html)
 
 <img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png" width="500">
+ 
  ## Table of Contents 
 
 1. [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
