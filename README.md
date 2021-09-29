@@ -68,60 +68,61 @@ Following the results and information derived from the different models, recomme
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
 ## 3. Overview of dataset
+
+- Description of data source
+
+  This dataset, from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), has been selected for its high ratings of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
+
+  The dataset include a mix of binary, categorical and continuous features.
+
+- The Dataset contains two files:
+
+  - **Demographics & application data - "application_record.csv"**
+
+    This data is provided by the applicants at the time of the credit card application. 
+
+    It contains socio-economic and demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
  
-### The Dataset contains two files:
-
-**- Demographics & application data - "application_record.csv"**
-
-This data is provided by the applicants at the time of the credit card application. 
-
-It contains soci-economic and demographic information including gender, car & real estate ownership, income level, education, occupation, marital status, contact information.
- 
-|application_record.csv |||
-| ------------- |-------------| -----|
-| Feature name        |    Explanation       |  Remarks/Variable Type |
-|    ID   | Client number |   |
-| CODE_GENDER   | Gender     | Binary    |
-|  FLAG_OWN_CAR |	Is there a car|  Binary   |  
-| FLAG_OWN_REALTY	|Is there a property| Binary |
-| CNT_CHILDREN |	Number of children | Continuous  |
-| AMT_INCOME_TOTAL |	Annual income | Continuous  |
-| NAME_INCOME_TYPE |	Income category   | Categorical   |
-| NAME_EDUCATION_TYPE |	Education level    | Categorical   |
-| NAME_FAMILY_STATUS	|Marital status    | Categorical   |
-|  NAME_HOUSING_TYPE |	Way of living   |  Categorical  |
-|  DAYS_BIRTH |	Birthday     |  Count backwards from current day (0), -1 means yesterday. / Continuous |
-| DAYS_EMPLOYED |	Start date of employment | Count backwards from current day(0). If positive, it means the person currently unemployed. / Continuous |
-| FLAG_MOBIL |	Is there a mobile phone   |  Binary  |
-| FLAG_WORK_PHONE	| Is there a work phone | Binary   |
-| FLAG_PHONE |	Is there a phone     | Binary   |
-| FLAG_EMAIL	| Is there an email  | Binary   |
-|  OCCUPATION_TYPE |	Occupation   | Categorical   |
-|  CNT_FAM_MEMBERS |	Family size  | Continuous   |
+      |application_record.csv |||
+      | ------------- |-------------| -----|
+      | Feature name        |    Explanation       |  Remarks/Variable Type |
+      |    ID   | Client number |   |
+      | CODE_GENDER   | Gender     | Binary    |
+      |  FLAG_OWN_CAR |	Is there a car|  Binary   |  
+      | FLAG_OWN_REALTY	|Is there a property| Binary |
+      | CNT_CHILDREN |	Number of children | Continuous  |
+      | AMT_INCOME_TOTAL |	Annual income | Continuous  |
+      | NAME_INCOME_TYPE |	Income category   | Categorical   |
+      | NAME_EDUCATION_TYPE |	Education level    | Categorical   |
+      | NAME_FAMILY_STATUS	|Marital status    | Categorical   |
+      |  NAME_HOUSING_TYPE |	Way of living   |  Categorical  |
+      |  DAYS_BIRTH |	Birthday     |  Count backwards from current day (0), -1 means yesterday. / Continuous |
+      | DAYS_EMPLOYED |	Start date of employment | Count backwards from current day(0). If positive, it means the person currently unemployed. / Continuous |
+      | FLAG_MOBIL |	Is there a mobile phone   |  Binary  |
+      | FLAG_WORK_PHONE	| Is there a work phone | Binary   |
+      | FLAG_PHONE |	Is there a phone     | Binary   |
+      | FLAG_EMAIL	| Is there an email  | Binary   |
+      |  OCCUPATION_TYPE |	Occupation   | Categorical   |
+      |  CNT_FAM_MEMBERS |	Family size  | Continuous   |
 
 
-##
 
-**- Payment History data - "credit_record.csv"** 
+   - **Payment History data - "credit_record.csv"** 
    
-   Data showing payment experience and the date of the last data extraction.  
+     Data showing payment experience and the date of the last data extraction.  
    
 
 
-|credit_record.csv | | |
---- | --- | ---
-*Feature name*  | `Explanation` | **Remarks**
-ID   | Client number |   
-MONTHS_BALANCE   | Record month    |  The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on / Continuous 
-STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-89 days overdue` 3: `90-119 days overdue` 4: `120-149 days overdue` 5: `Overdue or bad debts, write-offs for more than 150 days` C: `paid off that month` X: `No loan for the month` / Categorical
+       |credit_record.csv |||
+       |--- | --- | ---
+       |Feature name  | Explanation | Remarks |
+       |ID   | Client number |   
+      MONTHS_BALANCE   | Record month    |  The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on / Continuous 
+      STATUS |   Status  |   0: `1-29 days past due` 1: `30-59 days past due` 2: `60-89 days overdue` 3: `90-119 days overdue` 4: `120-149 days overdue` 5: `Overdue or bad debts, write-offs for more than 150 days` C: `paid off that month` X: `No loan for the month` / Categorical
  
  >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
-### Description of data source
 
-This dataset, from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), has been selected for its high ratings of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
-
-The datasets include a mix of binary, categorical and continuous features.
 
 
 ## 4. Question the team wants to answer with the data
@@ -152,7 +153,9 @@ The datasets include a mix of binary, categorical and continuous features.
 
     With this added information, determining how an applicant is deemed "good" or "bad" for credit card companies. 
 
-    Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit*** and the process of the preliminary data pre-processing steps above are demonstrated in cells 20 to 26 of ***../machine_learning/cleaning_and_preprocessing_data.ipynb***. 
+    Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit***,
+    
+    The process of the preliminary data pre-processing steps above are demonstrated in cells 13 to 22 of ***cleaning_and_preprocessing_data.ipynb***. 
 
  - Cleaning and encoding data
 
@@ -167,10 +170,10 @@ The datasets include a mix of binary, categorical and continuous features.
 
    Features, such as 'days of birth', 'days of employment', 'FLAG_MOBIL', 'FLAG_WORK_PHONE', 'FLAG_PHONE', 'FLAG_EMAIL', 'Months_from_Today', 'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
 
-   The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of ***machine_learning.ipynb TBR***. 
+   The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 24 to 55 of ***machine_learning.ipynb***. 
 
 
-   The two dataframes **new_credit** and **application_record_df** were merged to create the dataframe for the machine learning models, and export the merged dataset as a csv file from the PostgreSQL databse hosted on AWS RDS.
+   The two dataframes ***new_credit*** and ***application_record_df*** were merged to create the dataframe for the machine learning models, and export the merged dataset as a csv file from the PostgreSQL databse hosted on AWS RDS.
 
 ### Target Variable
 
@@ -195,7 +198,7 @@ The datasets include a mix of binary, categorical and continuous features.
 - The dataset was split into training and testing sets, 75% training and 25% testing. 
 - The data was scaled using StandardScaler() for the features of the training and testing sets. 
 
-- ***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.*** 
+- ***The process above is demonstrated in cells 12 to 17 of **machine_learning.ipynb**.*** 
 
  
 ### Balancing Data and Machine Learning Results
@@ -265,7 +268,7 @@ As illustrated above, Python in combination with multiple librairies and tools w
  
 ## 8. Results of the Analysis
      
- **- The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
+- The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.
 
 
 <p align="center">
@@ -274,14 +277,14 @@ As illustrated above, Python in combination with multiple librairies and tools w
 
 
  
-**Undersampling models yielded the following results:**
+- Undersampling models yielded the following results:
 
 <p align="center">
 <image src = "https://user-images.githubusercontent.com/82583576/135096930-e080d8d9-71a4-4fd6-b9ec-639f8762f559.PNG" width="750">
 </p>
 
  
-**Combination Sampling using SMOTEENN provided the following results when used on the same dataset.** 
+- Combination Sampling using SMOTEENN provided the following results when used on the same dataset:
 
  
 <p align="center">
@@ -292,20 +295,20 @@ As illustrated above, Python in combination with multiple librairies and tools w
  
 **Interpreting the Machine Learning Results**
 
- The tables above have a multitude of variables for what is deemed as "Good Applicants" and "Bad Applicants".
+- The tables above have a multitude of variables for what is deemed as "Good Applicants" and "Bad Applicants".
  
- The Bank has 2 risks to mitigate for losses from its credit card applicants:
+  - The Bank has 2 risks to mitigate for losses from its credit card applicants:
 
- 1. Loss by approving "bad" applicants - known as Type I error. 
+    1. Loss by approving "bad" applicants - known as Type I error. 
  
- 2. Opportunity Loss by denying "good" applicants - known as Type II error.
+    2. Opportunity Loss by denying "good" applicants - known as Type II error.
  
- From the tables above, the Random Forest method under both the Random Oversampling and SMOTE techniques yielded the best results to help achieve the bank's risks mitigation goals.
+- From the tables above, the Random Forest method under both the Random Oversampling and SMOTE techniques yielded the best results to help achieve the bank's risks mitigation goals.
  
- - The least probability of Type I error is from the SMOTE Oversampling Random Forest model (12.06%) with the Type II error being at 10.71%. 
-   This model also yielded the best combination of Precision, accuracy and F1-Score.
+  - The least probability of Type I error is from the SMOTE Oversampling Random Forest model (12.06%) with the Type II error being at 10.71%. 
+    This model also yielded the best combination of Precision, accuracy and F1-Score.
    
-   These results showcase the predictive accuracy of the model which will help the bank in its decision to approve or decline ab application.
+    These results showcase the predictive accuracy of the model which will help the bank in its decision to approve or decline ab application.
   
 
 ## 9. Recommendations
@@ -316,6 +319,7 @@ As illustrated above, Python in combination with multiple librairies and tools w
  - Include updated credit bureau information in the datasets
  - Expand the population size of the datasets
  - Market other product types, i.e. prepaid credit cards, to "denied" applicants 
+ - Use the findings from the analysis (features of "Good" applicants for target marketing
 
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
