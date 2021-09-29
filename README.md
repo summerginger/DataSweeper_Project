@@ -31,13 +31,13 @@
 
 7. [Technologies](https://github.com/summerginger/DataSweeper_Project#7-technologies)
 
-8. [Results of the Analysis](https://github.com/summerginger/DataSweeper_Project#9-Results-of-the-Analysis)
+8. [Results of the Analysis](https://github.com/summerginger/DataSweeper_Project#8-Results-of-the-Analysis)
 
-9. [Recommendations](https://github.com/summerginger/DataSweeper_Project#10-recommendations)
+9. [Recommendations](https://github.com/summerginger/DataSweeper_Project#9-recommendations)
 
-10. [Team](https://github.com/summerginger/DataSweeper_Project#11-team) 
+10. [Team](https://github.com/summerginger/DataSweeper_Project#10-team) 
 
-11. [Citations](https://github.com/summerginger/DataSweeper_Project#12-Citations)
+11. [Citations](https://github.com/summerginger/DataSweeper_Project#11-Citations)
 
 
 ## 1. Overview of the Project
@@ -334,7 +334,7 @@ As illustrated above, Python in combination with multiple librairies and tools w
  - Include updated credit bureau information in the datasets
  - Expand the population size of the datasets
  - Market other product types, i.e. prepaid credit cards, to "denied" applicants 
- - Use the findings from the analysis (features of "Good" applicants for target marketing
+ - Use the findings from the analysis (features of "Good" applicants) for target marketing
 
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
