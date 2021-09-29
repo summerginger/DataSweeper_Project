@@ -165,7 +165,7 @@ The datasets include a mix of binary, categorical and continuous features.
 
    The annual income column was re-scaled by dividing the whole column by 10000 and new columns for age and employment period were created as they were initially counted in days and not years.
 
-   Features, such as 'days of birth', 'days of employment' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
+   Features, such as 'days of birth', 'days of employment', 'FLAG_MOBIL', 'FLAG_WORK_PHONE', 'FLAG_PHONE', 'FLAG_EMAIL', 'Months_from_Today', 'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
 
    The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of ***machine_learning.ipynb TBR***. 
 
@@ -179,50 +179,47 @@ The datasets include a mix of binary, categorical and continuous features.
 
 ### Connecting the Database to the Machine Learning Models
 
-The data is in a PostgreSQL database hosted on AWS RDS. The two files making up the dataset will be merged in PostgreSQL and then integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
+- The data is in a PostgreSQL database hosted on AWS RDS. The two files making up the dataset will be merged in PostgreSQL and then integrated with the Jupyter Notebook file for machine learning using 3 different libraries. 
 
-These libraries are:
-- ipython-sql
-- SQLALCHEMY
-- A python database API (DBAPI) library (i.e. psycopg2)
+- These libraries are:
+  - ipython-sql
+  - SQLALCHEMY
+  - A python database API (DBAPI) library (i.e. psycopg2)
  
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
  ### Feature Selection and Splitting Data
  
-All the columns, except for the column "STATUS_y" from the pre-processed dataset were used as features to build the models. The target variable was determined to be "STATUS_y". 
-The dataset was split into training and testing sets, 75% training and 25% testing. 
+- All the columns, except for the column "STATUS_y", from the pre-processed dataset were used as features to build the models. 
+- The target variable was determined to be "STATUS_y". 
+- The dataset was split into training and testing sets, 75% training and 25% testing. 
+- The data was scaled using StandardScaler() for the features of the training and testing sets. 
 
-The data was scaled using StandardScaler() for the features of the training and testing sets. 
+- ***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.*** 
 
-
-***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.TBR*** 
-
-Preliminary feature engineering and preliminary feature selection, including decision-making process
-   
+ 
 ### Balancing Data and Machine Learning Results
 
-The next step is to feed the cleaned dataset into multiple Machine Learning models to find out which model is the best suited for the dataset.
+- The next step is to feed the cleaned dataset into multiple Machine Learning models to find out which model is the best suited for the dataset.
 
-The dataset is unbalanced and to address this, different sampling techniques will be used to balance the dataset. 
+- The dataset is unbalanced and to address this, different sampling techniques will be used to balance the dataset. 
 
-Two oversampling techniques, Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE) will be used for the first set of analyses.
+- Two oversampling techniques, Random Oversampling and Synthetic Minority Oversampling Technique (SMOTE) will be used for the first set of analyses.
 
-
-The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**. 
+  - The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**. 
 
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
 ## 6. Database
 
-The database for this project is a PostgreSQL database hosted in AWS RDS. 
+- The database for this project is a PostgreSQL database hosted in AWS RDS. 
 
-The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
+- The database is created through pgAdmin and the structure and connections of the tables can be demonstrated in the PostGresDB_Draft.txt from the **PostgreSQL_Database folder.** 
 
-The machine learning model is connected as shown in the demo.ipynb file from the **machine_learning** folder.
+- The machine learning model is connected as shown in the demo.ipynb file from the **machine_learning** folder.
 
-The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
+- The ERD diagram for our provisional database is also provided in the PostGreSQL_Database folder.
 
 <p align="center">
 
@@ -243,32 +240,32 @@ The ERD diagram for our provisional database is also provided in the PostGreSQL_
 As illustrated above, Python in combination with multiple librairies and tools were used for the project.
  
 **Data Cleaning and Analysis**
-Pandas and NumPy libraries in Jupyter notebook was used to clean data and perform exploratory analysis. 
+- Pandas and NumPy libraries in Jupyter notebook was used to clean data and perform exploratory analysis. 
 
 **Database**
-PostgreSQL was used to create the database tables and AWS RDS used for data storage.
+- PostgreSQL was used to create the database tables and AWS RDS used for data storage.
 
 **Machine Learning**
-Scikit-learn was the machine learning library used to create the Oversampling and Undersampling models. 
+- Scikit-learn was the machine learning library used to create the Oversampling and Undersampling models. 
 
 **Visualization** 
-Seaborn SNS is the library used to create graphics for the Confusion Matrices.
-Matplotlib is used for all other charts within the project.
+- Seaborn SNS is the library used to create graphics for the Confusion Matrices.
+- Matplotlib is used for all other charts within the project.
  
 **Presentation and Dashboard**
-Google Slides have been used to walk the client through the methodologies used, the findings from the data set and commentaries about how the machine learning model will help the bank with its credit card application approval process.
+- Google Slides have been used to walk the client through the methodologies used, the findings from the data set and commentaries about how the machine learning model will help the bank with its credit card application approval process.
  
-A dashboard using JavaScript, HTML and CSS has been used for a live demonstration of the project's findings.
-Flask and Pickle have also been used to demonstrate the interactivity of the model. The Pickle module has been used to enable applicants to input data in the model and have an instantaneous reply with regards to the application's status.
+- A dashboard using JavaScript, HTML and CSS has been used for a live demonstration of the project's findings.
+- Flask and Pickle have also been used to demonstrate the interactivity of the model. The Pickle module has been used to enable applicants to input data in the model and have an instantaneous reply with regards to the application's status.
  
-The dashboard is hosted on GitHub Pages.
+- The dashboard is hosted on GitHub Pages.
  
 > Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
 
  
 ## 8. Results of the Analysis
      
- **The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
+ **- The results for Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Tree for both oversampling techniques are shown in the tables below.**
 
 
 <p align="center">
