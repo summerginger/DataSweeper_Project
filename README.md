@@ -8,9 +8,9 @@
 > Presentation [Google Slides](https://docs.google.com/presentation/d/1X4rjV2lNl-p0wkA_8FDF0slwy_Eo9o3j9r64zUZSoxs/edit#slide=id.gc6f980f91_0_0)
 
 >  Dashboard [click here](https://summerginger.github.io/DataSweeper_Project/index.html)
-<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png">
 
 
+<img align="right" src="https://user-images.githubusercontent.com/82733723/133947489-cf784a14-c88c-4e3b-8e86-5fb6fc5e599e.png" width="500">
  ## Table of Contents 
 
 1. [Overview of the Project](https://github.com/summerginger/DataSweeper_Project#1-overview-of-the-project)
@@ -55,7 +55,9 @@ It is very important to manage credit risks and handle challenges efficiently fo
 
 ## 2. Topic Selection Criteria
 
-In today's fast-paced and high-tech world, credit scores can often impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their credit-worthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
+In today's fast-paced and high-tech world, credit scores can often impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. 
+
+Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their credit-worthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
 
 The primary objective of this analysis is to design a Machine Learning model to be used on a credit card applicant dataset. 
 
@@ -124,12 +126,13 @@ The datasets include a mix of binary, categorical and continuous features.
 
 ## 4. Question the team wants to answer with the data
 
-1. Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
+ -  Based on the dataset, what are the standard requirements for an individual to be approved for a credit card?
 
-2. Can the model minimize the following risks? 
+ -  Can the model minimize the following risks? 
 
-- Opportunity Loss from not approving the good applicant
-- Loss resulting from approving a non-credit worthy candidate
+    - Opportunity Loss from not approving the good applicant
+   
+    - Loss resulting from approving a non-credit worthy candidate
 
 
 ## 5.  Machine Learning  
@@ -139,44 +142,40 @@ The datasets include a mix of binary, categorical and continuous features.
 
 ### Data Cleaning and Preparation 
 
-#### - Choosing "good" and "bad" applicants
+- Preliminary data pre-processing must be completed before any analysis and/or machine learning models can be used on the dataset. 
 
-Preliminary data pre-processing must be completed before any analysis and/or machine learning models can be used on the dataset. 
+  - Determine "good" and "bad" applicants in the ***credit_records.csv*** file
 
-The following steps were undertaken to pre-process the datasets provided by the bank:
+    As illustrated in the **Overview of Dataset**, the ***credit_record.csv*** contains information of all the applicants and their payment experience. 
+    The status of payment of the card holder's credit account from the starting month of their credit account until the current month is provided. 
+    From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), credit card accounts are closed and sold to a collection agency when an account has not received payment for 3 or more months. 
 
-**- Determine "good" and "bad" applicants in the ***credit_records.csv*** file** 
+    With this added information, determining how an applicant is deemed "good" or "bad" for credit card companies. 
 
-As illustrated in the **Overview of Dataset**, the ***credit_record.csv*** contains information of all the applicants and their payment experience. 
-The status of payment of the card holder's credit account from the starting month of their credit account until the current month is provided. 
-From [additional sources](https://www.valuepenguin.com/what-happens-if-you-dont-pay-credit-card-bill), credit card accounts are closed and sold to a collection agency when an account has not received payment for 3 or more months. 
+    Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit*** and the process of the preliminary data pre-processing steps above are demonstrated in cells 20 to 26 of ***../machine_learning/cleaning_and_preprocessing_data.ipynb***. 
 
-With this added information, determining how an applicant is deemed "good" or "bad" for credit card companies. 
+ - Cleaning and encoding data
 
-Applicants with 3 or more late payments (i.e. 3 times or more of "STATUS" of any 0-5) were classified as "bad" applicants, and any applicants who have less than 3 late payments as "good" applicants. The dataframe containing the modified status of applicants is under the name ***new_credit*** and the process of the preliminary data pre-processing steps above are demonstrated in cells 20 to 26 of ***../machine_learning/cleaning_and_preprocessing_data.ipynb***. 
+   The next preliminary data preprocessing was to clean, encode, and rescale data from the **application_record.csv** file.
 
-**- Cleaning and encoding data** ***May need to change this section as we made some changes as to how and where the dataset was cleaned and merged, i.e. in PostGres vs Python DF**
+   After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicate records and filling in null values. 
+   The .drop_duplicates() method was used to remove duplicates and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". 
 
-The next preliminary data preprocessing was to clean, encode, and rescale data from the **application_record.csv** file.
+   Further encoding of gender, car ownership, owning realty, income category, education level, marital status, housing type, and occupation columns was done.
 
-After converting the csv file to a dataframe, the first step of cleaning the **aplication_record_df** was to remove duplicate records and filling in null values. 
-The .drop_duplicates() method was used to remove duplicates and filled in the null values in the "OCCUPATION_TYPE" column as "No Occupation Type". 
+   The annual income column was re-scaled by dividing the whole column by 10000 and new columns for age and employment period were created as they were initially counted in days and not years.
 
-Further encoding of gender, car ownership, owning realty, income category, education level, marital status, housing type, and occupation columns was done.
+   Features, such as 'days of birth', 'days of employment' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
 
-The annual income column was re-scaled by dividing the whole column by 10000 and new columns for age and employment period were created as they were initially counted in days and not years.
-
-Features, such as 'days of birth', 'days of employment' ,'FLAG_MOBIL' ,'FLAG_WORK_PHONE' ,'FLAG_PHONE' ,'FLAG_EMAIL' ,'Months_from_Today' ,'MONTHS_BALANCE' and 'id' were dropped as they were not deemed important for predicting whether an applicants pay their credit cards or not. 
-
-The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of ***machine_learning.ipynb TBR***. 
+   The process of cleaning, and encoding of the **application_record_df** is demonstrated in the cells 29 to 54 of ***machine_learning.ipynb TBR***. 
 
 
-The two dataframes **new_credit** and **application_record_df** were merged to create the dataframe for the machine learning models, and export the merged dataset as a csv file from the PostgreSQL databse hosted on AWS RDS.
+   The two dataframes **new_credit** and **application_record_df** were merged to create the dataframe for the machine learning models, and export the merged dataset as a csv file from the PostgreSQL databse hosted on AWS RDS.
 
 ### Target Variable
 
-The target variable ("STATUS_y") for this dataset is binary, i.e. approve (1) or not approve (0).
-Hence, the machine learning models used will be based on supervised binary classification models.  Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
+- The target variable ("STATUS_y") for this dataset is binary, i.e. approve (1) or not approve (0).
+  Hence, the machine learning models used will be based on supervised binary classification models.  Classification machine learning models such as Logistic Regression, Decision Trees, Random Forests, and Gradient Boosted Trees, will be applied to the data.
 
 ### Connecting the Database to the Machine Learning Models
 
@@ -199,7 +198,7 @@ The data was scaled using StandardScaler() for the features of the training and 
 
 ***The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**.TBR*** 
 
- >  Preliminary feature engineering and preliminary feature selection, including decision-making process
+Preliminary feature engineering and preliminary feature selection, including decision-making process
    
 ### Balancing Data and Machine Learning Results
 
@@ -212,11 +211,6 @@ Two oversampling techniques, Random Oversampling and Synthetic Minority Oversamp
 
 The process above is demonstrated in cells 57-70 of **machine_learning.ipynb**. 
 
-- Balancing Data and Machine learning Results
-
-
- 
- 
 
 >[Back_to_top](https://github.com/summerginger/DataSweeper_Project#credit-card-approval-prediction)
 
