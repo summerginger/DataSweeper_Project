@@ -59,13 +59,21 @@ It is very important to manage credit risks and handle challenges efficiently fo
 
 ## 2. Topic Selection Criteria
 
-In today's fast-paced and high-tech world, credit scores can often impact many financial transactions, including personal loans, auto loans, mortgages, and credit cards. 
+The current global economy is relatively precarious. 
 
-Credit scoring is a standard method of risk control in the financial industry. It uses the personal information and data submitted by credit card applicants to assess their credit-worthiness. To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
+- In the last year $24 trillion has been added to the global debt
+
+- A total record high of $281 trillion and debt-GDP ratio of over 355% ***(source Reuters London).***
+
+Financial institutions will be looking for ways to minimize the risks associated with the many sectors they are involved in.
+
+- The credit card charge-off rates have increased to 3.76% compared to 0.93% for other consumer credit products ***(source Federal Reserve reports).***
+
+Credit cards being one of the major income segments for banks, new models that help these institutions mitigate the risks involved in extending credit to their clients will be very sought after.
+
+To minimize its losses, the financial institution has a responsibility to control and objectively quantify the magnitude of risk and credit card issuance. 
 
 The primary objective of this analysis is to design a Machine Learning model to be used on a credit card applicant dataset. 
-
-Datasets will be cleaned and analysed so that they can be used in multiple machine learning models. 
 
 Following the results and information derived from the different models, recommendations will be provided so the financial institution can make better informed decisions.
 
