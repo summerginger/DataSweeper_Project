@@ -30,7 +30,8 @@ footer {
 }
 
 h2 {
-  padding: 60px;
+  padding: 15px;
+  font-size: 50px;
   color:whitesmoke;
 }
 
@@ -60,9 +61,9 @@ p {
 
   p1 {
     color:whitesmoke;
-    font-style:normal;
-    font-size:20px;
-    padding-left:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:23px;
+    padding-left:2px;
   }
   
   article {
