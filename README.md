@@ -275,7 +275,7 @@ As illustrated above, Python in combination with multiple librairies and tools w
  
 - The dashboard is hosted on GitHub Pages.
  
-> Dashboard Display [click here](https://summerginger.github.io/DataSweeper_Project/)
+> Dashboard Display [click here](https://summerginger.github.io/GD/DataSweeper_Project/)
 
  
 ## 8. Results of the Analysis
