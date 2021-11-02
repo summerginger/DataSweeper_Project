@@ -43,9 +43,11 @@
 ## 1. Overview of the Project
 
 
-The objective of this project is to assist a financial institution in its decision to approve or deny credit card applications. A model will be built to predict the probability of future defaults using personal information and data submitted by applicants.
+The objective of this project is to assist a financial institution in its decision to approve or deny credit card applications. 
+A model was built to predict the probability of future defaults using personal information and data submitted by applicants.
 
-The decision to approve a credit card application is mainly dependent on the personal and financial background of  the applicant. Factors such as age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
+The decision to approve a credit card application is mainly dependent on the personal and financial background of  the applicant. 
+Factors such as age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
 Credit analysis focused on recognizing, assessing and reducing the financial or other risks that could lead to losses for the bank.
 
@@ -85,7 +87,7 @@ Following the results and information derived from the different models, recomme
 
   This dataset, from [kaggle](https://www.kaggle.com/rikdifos/credit-card-approval-prediction-using-ml), has been selected for its high ratings of [usability, votes and credits](https://www.kaggle.com/rikdifos/datasets). 
 
-  The dataset include a mix of binary, categorical and continuous features.
+  The dataset includes a mix of binary, categorical and continuous features.
 
 - The Dataset contains two files:
 
@@ -143,9 +145,9 @@ Following the results and information derived from the different models, recomme
 
  -  Can the model minimize the following risks? 
 
-    - Opportunity Loss from not approving the good applicant
+ - Opportunity Loss from not approving the good applicant
    
-    - Loss resulting from approving a non-credit worthy candidate
+ - Loss resulting from approving a non-credit worthy candidate
 
 
 ## 5.  Machine Learning  
