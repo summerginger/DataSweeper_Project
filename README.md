@@ -47,7 +47,7 @@ The objective of this project is to assist a financial institution in its decisi
 
 The decision to approve a credit card application is mainly dependent on the personal and financial background of  the applicant. Factors such as age, gender, income, employment status, credit history and other attributes all carry weight in the approval decision. 
 
-Credit analysis will focus on recognizing, assessing and reducing the financial or other risks that could lead to losses for the bank.
+Credit analysis focused on recognizing, assessing and reducing the financial or other risks that could lead to losses for the bank.
 
 There are two basic risk factors: 
 
